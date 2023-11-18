@@ -3,14 +3,16 @@
 // O(n) O(n)
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class LeadersInAnArray {
     public List<Integer> leader(int[] nums) {
         List<Integer> leaders = new ArrayList<>();
-        leaders.add(nums[nums.length - 1]);
+        int length = nums.length;
+        leaders.add(nums[length - 1]);
         int currentLeader = nums[length - 1];
 
-        for(int j = nums.length - 2; j >= 0; j--) {
+        for(int i = length - 2; i >= 0; i--) {
             if (currentLeader < nums[i]) {
                 currentLeader = nums[i];
                 leaders.add(currentLeader);

@@ -1,5 +1,11 @@
 
 //https://leetcode.com/problems/search-suggestions-system/
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.TreeSet;
+
 class SearchSuggestions {
     class TrieNode {
         HashMap<Character, TrieNode> children;
