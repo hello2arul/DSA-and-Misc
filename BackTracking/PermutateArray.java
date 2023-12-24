@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 //https://leetcode.com/problems/permutations/
 public class PermutateArray {
-     public List<List<Integer>> permute(int[] nums) {
+    public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         permute(nums, res, new ArrayList<>());
         return res;
