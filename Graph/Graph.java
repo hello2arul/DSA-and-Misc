@@ -1,6 +1,5 @@
 package Graph;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -8,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
-import java.util.Stack;
 
 class Graph {
     Map<Integer, List<Integer>> adj;
@@ -30,8 +28,7 @@ class Graph {
     //toposort
     public boolean hasCyclebfs() {
         Queue<Integer> q = new LinkedList<>();
-        List<Integer> topoSort = new ArrayList<>();
-
+        
         for(int key: indegrees.keySet()) {
             if(indegrees.get(key) == 0) {
                 q.offer(key);
@@ -56,7 +53,6 @@ class Graph {
     public boolean hasCycledfs() {
         Set<Integer> visited = new HashSet<>();
         Set<Integer> stack = new HashSet<>();
-        Stack<Integer> topoSort = new Stack<>();
         
         for(int key: adj.keySet()) {
             if(!visited.contains(key) && dfs(key, visited, stack)) {
