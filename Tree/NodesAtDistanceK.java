@@ -21,43 +21,46 @@ public class NodesAtDistanceK {
     Map<TreeNode, TreeNode> parentMap = new HashMap<>();
 
     public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
-        List<Integer> res = new ArrayList<>(k);
         buildNeighbours(root, null);
-        TreeNode cur = target;
+        List<Integer> res = new ArraList<>();
         Queue<TreeNode> q = new LinkedList<>();
-        Set<TreeNode> visited = new HashSet<>();
+        Set<TreeNode> seen = new HashSet<>();
         q.offer(target);
-        int level = 0;
+        seen.add(target);
+        int depth = 0;
+        TreeNode cur = target;
 
         while(!q.isEmpty()) {
-            int size = q.size();
-            
-            while(size-- > 0) {
-                cur = q.poll();
-                visited.add(cur);
-                if(level == k)  res.add(cur.val);
-                validateAndAdd(cur, q, visited);
+            if(depth == k) {
+                while(!q.isEmpty())
+                    res.add(q.poll().val);
+                return res;
             }
-            level++;
+            int size = q.size();
+            while(size-- > 0) {
+                cur = q.poll();                
+                TreeNode parentNode = parentMap.get(cur);
+                validateAndAdd(parentNode, q, seen);
+                validateAndAdd(cur.left, q, seen);
+                validateAndAdd(parentNode, q, seen);
+            }
+            depth++;
         }
         return res;
     }
 
-    private void validateAndAdd(TreeNode node, Queue<TreeNode> q, Set<TreeNode> visited) {
-        if(node != null) {
+    private void validateAndAdd(TreeNode node, Queue<TreeNode> q, Set<TreeNode> seen) {
+        if(node != null & !seen.contains(node)) {
             q.offer(node);
-            if(node.left != null && !visited.contains(node.left))   q.offer(node.left);
-            if(node.right != null  && !visited.contains(node.right))  q.offer(node.right);
-            TreeNode parent = parentMap.get(node);
-            if(parent != null && !visited.contains(parent)) q.offer(parent);
+            seen.add(node);
         }
     }
 
-    private void buildNeighbours(TreeNode cur, TreeNode parent) {
-        if(cur != null) {
-            parentMap.put(cur, parent);
-            buildNeighbours(cur.left, cur);
-            buildNeighbours(cur.right, cur);
+    private void buildNeighbours(TreeNode node, TreeNode parent) {
+        if(node != null) {
+            parentMap.put(node, parent);
+            buildNeighbours(node.left, node);
+            buildNeighbours(node.right, node);
         }
     }
 }

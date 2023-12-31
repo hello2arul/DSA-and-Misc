@@ -1,5 +1,6 @@
 import java.util.Stack;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class BinaryTree {
@@ -52,6 +53,43 @@ public class BinaryTree {
         }
 
         return inOrder;
+    }
+
+    public List<Integer> iterativePreOrder() {
+        List<Integer> preOrder = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = root;
+
+        while(cur != null || !stack.isEmpty()) {
+            if(cur != null) {
+                stack.push(cur);
+                preOrder.add(cur.val);
+                cur = cur.left;
+
+            } else {
+                cur = stack.pop();
+                cur = cur.right;
+            }
+        }
+        return preOrder;
+    }
+
+    public List<Integer> iterativePostOrder() {
+        LinkedList<Integer> postOrder = new LinkedList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = root;
+
+        while(cur != null || !stack.isEmpty()) {
+            if(cur != null) {
+                stack.push(cur);
+                postOrder.addFirst(cur.val);
+                cur = cur.right;
+            } else {
+                cur = stack.pop();
+                cur = cur.left;
+            }
+        }
+        return postOrder;
     }
 
     public static void main(String[] args) {
