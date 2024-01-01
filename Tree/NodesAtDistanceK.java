@@ -42,7 +42,7 @@ public class NodesAtDistanceK {
                 TreeNode parentNode = parentMap.get(cur);
                 validateAndAdd(parentNode, q, seen);
                 validateAndAdd(cur.left, q, seen);
-                validateAndAdd(parentNode, q, seen);
+                validateAndAdd(cur.right, q, seen);
             }
             depth++;
         }

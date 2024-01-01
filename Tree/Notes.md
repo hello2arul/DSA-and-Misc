@@ -7,3 +7,6 @@ traversals:
 a binary tree can be constructed fromn
 1. inorder & preorder
 2. indoer & postorder
+
+Complete binary tree:
+    Completely filled except maybe the last level and the last level should be filled from left to right.
