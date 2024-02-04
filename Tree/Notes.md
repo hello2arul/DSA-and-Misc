@@ -10,3 +10,7 @@ a binary tree can be constructed fromn
 
 Complete binary tree:
     Completely filled except maybe the last level and the last level should be filled from left to right.
+
+Self balancing trees:
+1. AVL tree
+   -> has difference between height of left and right subtrees at most 1
