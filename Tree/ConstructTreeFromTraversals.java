@@ -1,3 +1,4 @@
+package Tree;
 
 //https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/
 public class ConstructTreeFromTraversals {
@@ -18,5 +19,4 @@ public class ConstructTreeFromTraversals {
         node.right = buildTree(preorder, inorder, i + 1, inEnd);
         return node;
     }
-}
 }

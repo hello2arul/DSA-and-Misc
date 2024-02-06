@@ -22,7 +22,7 @@ public class NodesAtDistanceK {
 
     public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
         buildNeighbours(root, null);
-        List<Integer> res = new ArraList<>();
+        List<Integer> res = new ArrayList<>();
         Queue<TreeNode> q = new LinkedList<>();
         Set<TreeNode> seen = new HashSet<>();
         q.offer(target);
