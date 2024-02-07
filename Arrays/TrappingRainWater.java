@@ -1,6 +1,6 @@
 //https://leetcode.com/problems/trapping-rain-water/
 //also refer stack solution
-public class TrappigRainWater {
+public class TrappingRainWater {
     public int trap(int[] height) {
         int[] leftMax = new int[height.length];
         int[] rightMax = new int[height.length];

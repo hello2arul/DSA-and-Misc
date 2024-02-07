@@ -1,10 +1,11 @@
+package Hashing;
 //https://leetcode.com/problems/subarray-sum-equals-k/description/
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class SubArraySumEqualsK {
-        public int subarraySum(int[] nums, int k) {
+    public int subarraySum(int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap<>();
         map.put(0, 1);
         int res = 0, sum = 0;
