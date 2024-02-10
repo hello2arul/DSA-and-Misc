@@ -12,5 +12,13 @@ Complete binary tree:
     Completely filled except maybe the last level and the last level should be filled from left to right.
 
 Self balancing trees:
+uses left or right rotations to keep themself balanced.
 1. AVL tree
+   -> is a BST
+   -> maintains balance factor
    -> has difference between height of left and right subtrees at most 1
+
+2. RedBlack tree
+    -> loose in terms of balanced as compared to AVL tree so retructuring happens less during
+    insert, delete
+    -> Java's TreeSet and TreeMap uses this.
