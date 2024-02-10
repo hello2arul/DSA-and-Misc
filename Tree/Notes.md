@@ -22,3 +22,7 @@ uses left or right rotations to keep themself balanced.
     -> loose in terms of balanced as compared to AVL tree so retructuring happens less during
     insert, delete
     -> Java's TreeSet and TreeMap uses this.
+    -> Every node is either Red or Black.
+    -> Root is always black
+    -> No two consecutive reds
+    -> No of black nodes from every nodes to all of its descendents shoule be the same
