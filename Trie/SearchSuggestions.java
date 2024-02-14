@@ -1,4 +1,4 @@
-
+package Trie;
 //https://leetcode.com/problems/search-suggestions-system/
 
 import java.util.ArrayList;

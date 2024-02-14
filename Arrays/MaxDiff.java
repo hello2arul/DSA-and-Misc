@@ -1,3 +1,4 @@
+package Arrays;
 // https://leetcode.com/problems/maximum-difference-between-increasing-elements/description/
 
 class MaxDiff {

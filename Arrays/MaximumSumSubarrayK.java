@@ -1,3 +1,4 @@
+package Arrays;
 //https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/
 
 import java.util.HashMap;

@@ -12,6 +12,6 @@ public class MaxSumWithNoConsecutives {
         return Math.max(
             maxSum(arr, n - 1),
             arr[n - 1] + maxSum(arr, n - 2)
-        )
+        );
     }
 }

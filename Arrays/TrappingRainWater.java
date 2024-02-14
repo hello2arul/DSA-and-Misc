@@ -1,3 +1,5 @@
+package Arrays;
+
 //https://leetcode.com/problems/trapping-rain-water/
 //also refer stack solution
 public class TrappingRainWater {

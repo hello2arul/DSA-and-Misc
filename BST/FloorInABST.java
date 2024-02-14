@@ -1,9 +1,11 @@
 package BST;
 
+import Tree.TreeNode;
+
 import java.util.TreeSet;
 
 /*
- * floor -> closest value less than or equal to 
+ * floor -> the closest value less than or equal to
  * https://www.geeksforgeeks.org/problems/floor-in-bst/1
  */
 public class FloorInABST {

@@ -1,3 +1,4 @@
+package Arrays;
 //https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/
 
 public class LongestEvenOddSubArray {

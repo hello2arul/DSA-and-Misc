@@ -1,3 +1,4 @@
+package Arrays;
 //https://leetcode.com/problems/maximum-subarray/
 
 public class MaximumSumSubarray {

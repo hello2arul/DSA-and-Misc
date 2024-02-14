@@ -1,3 +1,4 @@
+package Arrays;
 //https://leetcode.com/problems/max-consecutive-ones/
 
 public class MaxConsecutiveOnes {
