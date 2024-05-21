@@ -1,3 +1,5 @@
+package Strings;
+
 /*
  * finding index of first repeating char
  */

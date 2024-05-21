@@ -1,3 +1,4 @@
+package Strings;
 //https://leetcode.com/problems/optimal-partition-of-string/
 
 import java.util.HashSet;

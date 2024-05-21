@@ -1,3 +1,5 @@
+package Strings;
+
 /*
  * https://leetcode.com/problems/rotate-string/
  */

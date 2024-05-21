@@ -1,3 +1,5 @@
+package Strings;
+
 /*
  * https://leetcode.com/problems/first-unique-character-in-a-string/
  * store index 
