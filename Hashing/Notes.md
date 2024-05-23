@@ -24,4 +24,4 @@ Collision Handing:
 
 
 LinkedHashMap:
-   Maintains the order of insertion.
+   Maintains the order of insertion of keys.

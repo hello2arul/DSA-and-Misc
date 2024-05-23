@@ -3,6 +3,9 @@ package BackTracking;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ * https://leetcode.com/problems/generate-parentheses/description/
+ */
 public class GenerateParenthesis {
     public List<String> generateParenthesis(int n) {
         List<String> res = new ArrayList<>();

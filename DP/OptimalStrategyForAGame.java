@@ -9,7 +9,7 @@ public class OptimalStrategyForAGame {
         if(i + 1 == j) {
             return Math.max(arr[i], arr[j]);
         }
-        return Mat.max(
+        return Math.max(
             sum - optimize(arr, i + 1, j, sum - arr[i]),
             sum - optimize(arr, i, j - 1, sum - arr[j])
         );
