@@ -119,7 +119,7 @@ public class TreeOfSpace {
      */
     public boolean unlock(String name, int id) {
         Node current = nodes.get(name);
-        System.out.println(name + ", " + id + "," + current.isLocked);
+        // System.out.println(name + ", " + id + "," + current.isLocked);
         if (!current.isLocked || current.lockedBy != id) {
             return false;
         }
@@ -150,6 +150,11 @@ public class TreeOfSpace {
                 return false;
             parent = parent.parent;
         } 
+        // to prevent concurrent modification!
+        List<Node> descNodes = new ArrayList<>(current.lockedDescendants);
+        for (Node descendant: descNodes) {
+            unlock(descendant.name, id);
+        }
         lock(name, id);
         return true;
     }
@@ -183,7 +188,7 @@ public class TreeOfSpace {
 
         for (String query: queries) {
             String[] cur = query.split("\s+");
-            System.out.println(Arrays.toString(cur));
+            // System.out.println(Arrays.toString(cur));
 
              
             switch (cur[0]) {
@@ -197,7 +202,7 @@ public class TreeOfSpace {
                     System.out.println(tree.upgradeLock(cur[1], Integer.parseInt(cur[2])));
                     break;
             }
-            System.out.println(tree.nodes);
+            // System.out.println(tree.nodes);
         }
 
     }
