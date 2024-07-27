@@ -2,6 +2,8 @@
 
 import java.util.*;
 
+import org.w3c.dom.Node;
+
 
 /*
  You are given a complete, balanced M-Ary Tree and must support Q queries. There are 3 kinds of queries. 
@@ -25,6 +27,30 @@ Output: true true true false true
 Input: N = 3, M = 2, nodes = ["World", "China", "India"],  
 queries =  ["3 India 1", "1 World 9"]
 Output: false true
+
+
+Making this multithreading safe
+ 1. Using synchronized Methods
+   - This may not work as the child nodes may be modified by other threads while
+    the parent is getting locked
+ 2. Use a Lock Object
+  ```
+  private final ReentrantLock lock = new ReentrantLock();
+    public boolean lock(String name, int id) {
+        lock.lock();
+        try {
+            // existing implementation
+        } finally {
+            lock.unlock();
+        }
+    }
+    ```
+ 3. Use volatile or Atomic References if Needed
+ - If you need to manage shared state across threads (like a global variable), 
+ consider using volatile or atomic classes (e.g., AtomicInteger) to ensure visibility across threads.
+
+ Particular node will inform all its ancestor about its locking and 2 descendants are locked at same time and 
+ informing the same ancestor (this may cause race condition)
  */
 
 
@@ -45,7 +71,7 @@ public class TreeOfSpace {
             this.name = null;
             this.lockedBy = -1;
             this.children = new ArrayList<>();
-            this.lockedDescendants = new ArrayList<>();
+            this.lockedDescendants = new ArrayList<>(); // use set here for faster remove
             this.isLocked = false;
             this.parent = null;
         }
