@@ -10,7 +10,7 @@ public class ConvertBaseAToB {
         int baseTen = 0;
 
         for (int i = 0; i < num.length(); i++) {
-            baseTen += (num.charAt(i) - '0' * (int) Math.pow(2, num.length() - i - 1));
+            baseTen += ((num.charAt(i) - '0') * (int) Math.pow(2, num.length() - i - 1));
         }
 
         // convert from 10 to 6
