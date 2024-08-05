@@ -1,3 +1,5 @@
+package Searching;
+
 /**
  * https://leetcode.com/problems/binary-search/description/
  * works only when sorted O(logn)
