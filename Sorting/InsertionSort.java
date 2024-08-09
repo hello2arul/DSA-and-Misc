@@ -1,4 +1,4 @@
-
+package Sorting;
 
 class InsertionSort {
     //O(n^2)

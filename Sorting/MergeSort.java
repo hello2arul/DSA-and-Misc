@@ -1,3 +1,5 @@
+package Sorting;
+
 //https://leetcode.com/problems/sort-an-array/
 public class MergeSort {
     /*

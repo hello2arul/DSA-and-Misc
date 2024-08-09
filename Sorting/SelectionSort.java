@@ -1,3 +1,5 @@
+package Sorting;
+
 public class SelectionSort {
     //find min and swap
     //(O^2)

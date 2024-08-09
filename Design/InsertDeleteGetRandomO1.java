@@ -20,7 +20,7 @@ public class InsertDeleteGetRandomO1 {
      List<Integer> list;
     Map<Integer, Integer> map;
 
-    public RandomizedSet() {
+    public InsertDeleteGetRandomO1() {
         list = new ArrayList<>();
         map = new HashMap<>();
     }

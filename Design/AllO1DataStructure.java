@@ -30,7 +30,7 @@ public class AllO1DataStructure {
     private ListNode tail;
     private Map<String, ListNode> map;
 
-    public AllOne() {
+    public AllO1DataStructure() {
         head = null;
         tail = null;
         map = new HashMap<>();

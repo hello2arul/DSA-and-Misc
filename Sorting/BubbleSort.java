@@ -1,3 +1,5 @@
+package Sorting;
+
 public class BubbleSort {
     //compare adjacent elements
     //O(n^2)

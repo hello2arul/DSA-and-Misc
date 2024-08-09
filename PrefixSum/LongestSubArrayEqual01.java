@@ -1,4 +1,6 @@
-package PrefixSum;//https://leetcode.com/problems/contiguous-array/description/
+package PrefixSum;
+
+//https://leetcode.com/problems/contiguous-array/description/
 
 import java.util.HashMap;
 import java.util.Map;

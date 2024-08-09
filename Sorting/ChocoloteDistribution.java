@@ -1,4 +1,4 @@
-/*
+package Sorting;/*
 https://practice.geeksforgeeks.org/problems/chocolate-distribution-problem3825/
 Input:
 N = 8, M = 5

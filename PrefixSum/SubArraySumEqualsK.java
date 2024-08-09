@@ -1,3 +1,5 @@
+package PrefixSum;
+
 //https://leetcode.com/problems/subarray-sum-equals-k/description/
 
 import java.util.HashMap;

@@ -6,7 +6,7 @@ Multithreading is the concurrent execution of two or more threads in a program. 
 
 There are two primary ways to create a thread in Java:
 
-1. **Extending the `Thread` class**
+1. **Extending the `Thread` class which is also implements `Runnable` interface**
 2. **Implementing the `Runnable` interface**
 
 ### 1. Extending the `Thread` Class
