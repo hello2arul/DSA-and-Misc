@@ -1,4 +1,4 @@
-package Misc;
+package Misc.LineSweeping;
 
 import java.util.Map;
 import java.util.TreeMap;
