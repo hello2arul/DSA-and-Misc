@@ -22,12 +22,12 @@ class DisjointSet {
         return parent[u];
     }
 
-    public void union(int u, int v) {
+    public boolean union(int u, int v) {
         int findU = find(u);
         int findV = find(v);
 
         if (findU == findV)
-            return;
+            return false;
         if (rank[findU] >= rank[findV]) {
             parent[findV] = findU;
             rank[findU]++;
@@ -35,5 +35,6 @@ class DisjointSet {
             parent[findU] = findV;
             rank[findV]++;
         }
+        return true;
     }
 }

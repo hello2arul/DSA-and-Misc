@@ -1,13 +1,37 @@
-A Graph is a data structure that consists of the following two components:
-* A finite set of vertices also called nodes.
-* A finite set of ordered pair of the form (u, v) called as edge. The pair is ordered because (u, v) is not the same as (v, u) in case of a directed graph(digraph). The pair of the form (u, v) indicates that there is an edge from vertex u to vertex v. The edges may contain weight/value/cost.
+## Graph
 
+A graph is a data structure consisting of:
 
-* Directed Graphs: The Directed graphs are such graphs in which edges are directed in a single direction.
-* Undirected Graphs: Undirected graphs are such graphs in which the edges are directionless or in other words bi-directional. That is, if there is an edge between vertices u and v then it means we can use the edge to go from both u to v and v to u.
+- **Vertices (Nodes)**: A finite set of vertices.
+- **Edges**: A finite set of ordered pairs (u, v). In a directed graph (digraph), (u, v) is not the same as (v, u). Edges may have weights, values, or costs.
 
-* Articulation point: 
-    - Removal of this will increase the number of connected components
-    1. If the root of DFS tree has two or more children, then it's an articulation point.
-* Bridges:
-    - Similar to articulation point but it's an edge instead of a node.
+### Types of Graphs
+
+- **Directed Graphs**: Graphs where edges have a direction, meaning they go from vertex `u` to vertex `v`.
+- **Undirected Graphs**: Graphs where edges are bidirectional, meaning an edge between vertices `u` and `v` allows travel from both `u` to `v` and `v` to `u`.
+
+### Special Concepts
+
+- **Articulation Point**: 
+  - A vertex that, when removed, increases the number of connected components in the graph. 
+  - Example: In a DFS tree, if the root has two or more children, it is an articulation point.
+
+- **Bridges**:
+  - An edge that, when removed, increases the number of connected components in the graph. 
+  - Similar to an articulation point, but applicable to edges.
+
+## Minimum Spanning Tree (MST)
+
+- **Definition**: A spanning tree of a graph is a subset of the graph that connects all vertices with the minimum possible number of edges, and does not contain any cycles. A graph may have more than one spanning tree.
+
+### Algorithms to Find MST
+
+- **Prim's Algorithm**:
+  - Maintain two sets: 
+    1. **In MST**
+    2. **Not in MST**
+  - Start from an initial vertex and greedily pick the minimum-weight edge connecting a vertex in the MST to a vertex not yet in the MST.
+
+- **Kruskal's Algorithm**:
+  - Sort all edges in non-decreasing order of their weight.
+  - Add edges one by one to the growing spanning tree, ensuring no cycles are formed, until all vertices are connected.
