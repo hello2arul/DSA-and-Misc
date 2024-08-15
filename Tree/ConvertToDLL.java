@@ -13,7 +13,7 @@ public class ConvertToDLL {
 
     public Node covertToDLL(Node root) {
         if(root == null) return null;
-        Node head = ConvertToDLL(root.left);
+        Node head = covertToDLL(root.left);
         if(prev == null) {
             head = root;
         } else {

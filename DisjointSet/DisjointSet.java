@@ -1,6 +1,6 @@
 package DisjointSet;
 
-class DisjointSet {
+public class DisjointSet {
 
     private int[] rank;
     private int[] parent;
