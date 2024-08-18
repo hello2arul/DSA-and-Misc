@@ -32,15 +32,15 @@ public class EditDistance {
             return memo[i][j];
         }
         if(s1.charAt(i - 1) == s2.charAt(j - 1)) {
-            memo[i][j] =  minEdits(s1, s2, i - 1, j - 1, memo);
+            memo[i][j] =  minEditsMemo(s1, s2, i - 1, j - 1, memo);
             return memo[i][j];
         }
         memo[i][j] = 1 + Math.min(
             Math.min(
-                minEdits(s1, s2, i - 1, j, memo),
-                minEdits(s1, s2, i, j - 1, memo)
+                minEditsMemo(s1, s2, i - 1, j, memo),
+                minEditsMemo(s1, s2, i, j - 1, memo)
             ),
-            minEdits(s1, s2, i - 1, j - 1, memo)
+            minEditsMemo(s1, s2, i - 1, j - 1, memo)
         );
         return memo[i][j];
     }

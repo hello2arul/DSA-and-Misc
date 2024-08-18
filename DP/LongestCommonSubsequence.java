@@ -31,13 +31,13 @@ public class LongestCommonSubsequence {
             return memo.get(key);
         int res = 0;
         if(s1.charAt(i) == s2.charAt(j)) {
-            res = 1 + lcsRecursive(s1, s2, i + 1, j + 1, memo);
+            res = 1 + lcsMemo(s1, s2, i + 1, j + 1, memo);
             memo.put(key, res);
             return res;
         }
         res = Math.max(
-            lcsRecursive(s1, s2, i + 1, j, memo),
-            lcsRecursive(s1, s2, i, j + 1, memo)
+            lcsMemo(s1, s2, i + 1, j, memo),
+            lcsMemo(s1, s2, i, j + 1, memo)
         );
         memo.put(key, res);
         return res;

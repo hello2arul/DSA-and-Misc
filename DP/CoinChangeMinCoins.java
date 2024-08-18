@@ -24,7 +24,7 @@ public class CoinChangeMinCoins {
         return res == Integer.MAX_VALUE ? -1 : res;
     }
 
-    public int coinChange(int[] denoms, int change) {
+    public int coinChangeDP(int[] denoms, int change) {
 		int[] noOfCoins = new int[change + 1];
 		Arrays.fill(noOfCoins, change + 1);
 		noOfCoins[0] = 0;

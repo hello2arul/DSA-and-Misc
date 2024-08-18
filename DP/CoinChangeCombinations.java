@@ -28,9 +28,9 @@ public class CoinChangeCombinations {
         if(memo.containsKey(key))
             return memo.get(key);
         
-        int res = coinChangeCombination(coins, amount, idx + 1, memo);
+        int res = coinChangeCombinationMemo(coins, amount, idx + 1, memo);
         if(coins[idx] <= amount) {
-            res += coinChangeCombination(coins, amount - coins[idx], idx, memo);
+            res += coinChangeCombinationMemo(coins, amount - coins[idx], idx, memo);
         }
         memo.put(key, res);
         return res;
