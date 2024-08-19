@@ -63,3 +63,6 @@ public class RunnableExample {
 
 ### Achieving Multithreading on a Single-Core CPU
 Multithreading on a single-core CPU is achieved through time-slicing. The operating system rapidly switches between threads, giving the illusion of concurrent execution by managing context switches.
+
+## Useful links
+- https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html
