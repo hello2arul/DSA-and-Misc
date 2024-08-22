@@ -16,7 +16,6 @@ Implement the MyCalendar class:
 MyCalendar() Initializes the calendar object.
 boolean book(int start, int end) Returns true if the event can be added to the calendar successfully without causing a double booking.
  Otherwise, return false and do not add the event to the calendar.
- TODO:
  */
 public class MyCalenderI {
     TreeMap<Integer, Integer> calendar;

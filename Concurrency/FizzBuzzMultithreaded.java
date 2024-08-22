@@ -1,4 +1,4 @@
-package Misc;
+package Concurrency;
 
 import java.util.function.IntConsumer;
 

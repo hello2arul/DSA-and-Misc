@@ -35,3 +35,7 @@ A graph is a data structure consisting of:
 - **Kruskal's Algorithm**:
   - Sort all edges in non-decreasing order of their weight.
   - Add edges one by one to the growing spanning tree, ensuring no cycles are formed, until all vertices are connected.
+
+
+### Eulerian path:
+- In graph theory, an Eulerian trail (or Eulerian path) is a trail in a finite graph that visits every edge exactly once (allowing for revisiting vertices). Similarly, an Eulerian circuit or Eulerian cycle is an Eulerian trail that starts and ends on the same vertex. 

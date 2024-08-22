@@ -4,8 +4,10 @@ public class DisjointSet {
 
     private int[] rank;
     private int[] parent;
+    int size;
     
     public DisjointSet(int size) {
+        this.size = size;
         rank = new int[size];
         parent = new int[size];
 
@@ -35,6 +37,7 @@ public class DisjointSet {
             parent[findU] = findV;
             rank[findV]++;
         }
+        size--;
         return true;
     }
 }
