@@ -56,7 +56,7 @@ public class RunnableExample {
 
 
 - Use Atomic when you need simple operations that can be performed atomically without locks.
-- Use Volatile when sharing a flag or status variable among threads without needing compound actions.
+- When volatile is used, jvm immediately writes back its value on to the main memory after a thread updates the value in its CPU cache.
 - Use Synchronized when protecting a block of code or method from concurrent access by multiple threads.
 - Mutex (ReentrantLock): Ensures exclusive access to a resource.
 - Semaphore: Controls access to a resource pool, allowing multiple threads to access a specified number of resources concurrently.
@@ -64,5 +64,17 @@ public class RunnableExample {
 ### Achieving Multithreading on a Single-Core CPU
 Multithreading on a single-core CPU is achieved through time-slicing. The operating system rapidly switches between threads, giving the illusion of concurrent execution by managing context switches.
 
+
+### Deadlock
+-  Deadlock is a situation when two or more threads are waiting for each other and the waiting never ends.
+
+### Starvation
+- In Starvation, threads are also waiting for each other. But here waiting time is not infinite after some interval of time. Eg) when you set priority to threads.
+- Prevention: ReentrantLock(true)
+
+### Livelock
+-  Livelock is a special case of resource starvation; the general definition states that a specific process is not progressing. Eg) Imagine two people trying to pass each other in a narrow hallway. Each person tries to move out of the way to let the other pass, but each time they move, the other person also moves to avoid them.
+
 ## Useful links
 - https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html
+- https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/package-summary.html

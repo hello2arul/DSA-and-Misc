@@ -197,3 +197,23 @@ GraphQL is a query language for APIs that allows clients to request exactly the 
 ## Conclusion
 
 Each protocol serves a distinct purpose in network communication, balancing trade-offs between reliability, speed, and complexity based on the application's needs. If you have specific questions about any protocol or need more details, let me know!
+
+
+
+## URI vs. URL vs. URN
+
+### URI (Uniform Resource Identifier)
+- **Definition:** A URI is a string that uniquely identifies a resource, either by location, name, or both.
+- **Purpose:** General term for any identifier of a resource.
+- **Example:** `https://example.com/path/to/resource`, `urn:isbn:0451450523`
+
+### URL (Uniform Resource Locator)
+- **Definition:** A URL is a type of URI that specifies how to locate a resource by describing its access mechanism and location.
+- **Purpose:** Used to access resources on the web or network.
+- **Structure:** Includes scheme, host, and path.
+- **Example:** `https://www.example.com/index.html`, `ftp://ftp.example.com/file.zip`
+
+### URN (Uniform Resource Name)
+- **Definition:** A URN is a type of URI that provides a unique and persistent name for a resource within a specific namespace, without specifying how to locate it.
+- **Purpose:** Used for persistent, location-independent identification.
+- **Example:** `urn:ietf:rfc:2141`, `urn:nbn:de:101-20120216`
