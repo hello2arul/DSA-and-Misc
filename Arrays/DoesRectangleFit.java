@@ -58,7 +58,7 @@ public class DoesRectangleFit {
     }
 
     public static void main(String[] args) {
-        RectangleManager manager = new RectangleManager();
+        DoesRectangleFit manager = new DoesRectangleFit();
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
