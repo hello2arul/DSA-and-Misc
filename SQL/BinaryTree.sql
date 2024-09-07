@@ -18,9 +18,19 @@ INSERT INTO BinaryTree (node, parent_node) VALUES (5, 3);
 
 
 -- Solution
-SELECT node,
-       CASE
-           WHEN parent_node is null then 'root'
-           WHEN parent_node is not null and node in (SELECT DISTINCT parent_node FROM BinaryTree) then 'inner'
-           ELSE 'leaf'
-       END;
+SELECT 
+    node,
+    CASE
+        WHEN parent_node IS NULL THEN 'root'
+        WHEN
+            parent_node IS NOT NULL
+                AND node IN (SELECT DISTINCT
+                    parent_node
+                FROM
+                    BinaryTree)
+        THEN
+            'inner'
+        ELSE 'leaf'
+    END AS node_type
+FROM
+    BinaryTree;
