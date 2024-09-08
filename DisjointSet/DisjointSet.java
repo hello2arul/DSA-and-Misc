@@ -32,10 +32,10 @@ public class DisjointSet {
             return false;
         if (rank[findU] >= rank[findV]) {
             parent[findV] = findU;
-            rank[findU]++;
+            rank[findU] += rank[findV];
         } else {
             parent[findU] = findV;
-            rank[findV]++;
+            rank[findV] += rank[findU];
         }
         size--;
         return true;
