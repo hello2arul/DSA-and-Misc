@@ -1,9 +1,10 @@
 package Strings;
 
+import java.util.*;
 
 /**
  * https://www.geeksforgeeks.org/find-pattern-in-infinite-binary-stream-i/
- * use rabin karp -> hash of window
+ * use RabinKarp -> hash of window
  */
 public class FindPatternInInfiniteBinaryStream {
 
