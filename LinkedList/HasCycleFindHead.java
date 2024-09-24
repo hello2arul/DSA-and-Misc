@@ -2,11 +2,13 @@ package LinkedList;
 
 import java.util.HashSet;
 
+import LinkedList.LRUCache.ListNode;
+
 /*
  * https://leetcode.com/problems/linked-list-cycle-ii/description/
  */
 public class HasCycleFindHead {
-     public ListNode detectCycle(ListNode head) {
+    public ListNode detectCycle(ListNode head) {
         if(head == null || head.next == null) {
             return null;
         }
@@ -23,21 +25,24 @@ public class HasCycleFindHead {
         return null;
     }
 
-    //unclear
-    public ListNode detectCycle(ListNode head) {
-        if(head == null|| head.next == null || head.next.next == null)  return null;
-        ListNode first = head.next;
-        ListNode second = head.next.next;
-        while(first != second) {
-            if(second.next == null || second.next.next == null) return null;
-            first = first.next;
-            second = second.next.next;
+    // unclear
+    public ListNode detectCycleII(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if (slow == fast) {
+                slow = head;
+                while (slow != fast) {
+                    slow = slow.next;
+                    fast = fast.next;
+                }
+                return slow;
+            }
         }
-        first = head;
-        while(first != second) {
-            first = first.next;
-            second = second.next;
-        }
-        return first;
+        return null;
     }
 }
