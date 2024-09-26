@@ -9,11 +9,13 @@ class PrefixTrie {
         Map<Character, TrieNode> children;
         boolean endOfWord;
         int wordCount;
+        int prefixCount;
 
         TrieNode() {
             children = new HashMap<>();
             endOfWord = false;
             wordCount = 0;
+            prefixCount = 0;
         }
 
         @Override
@@ -36,6 +38,7 @@ class PrefixTrie {
                 node = new TrieNode();
                 cur.children.put(ch, node);
             }
+            node.prefixCount++;
             cur = node;
         }
         cur.endOfWord = true;
