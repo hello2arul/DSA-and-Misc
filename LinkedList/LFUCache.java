@@ -14,20 +14,6 @@ import javafx.util.Pair;
  *  - Evict the LRU key among them
  */
 public class LFUCache {
-    class ListNode {
-        int key;
-        int val;
-        int freq;
-        ListNode next;
-        ListNode prev; 
-
-        public ListNode(int key, int val) {
-            this.val = val;
-            this.key = key;
-            this.freq = 1;
-        }
-    }
-
     // key, freq, val
     private Map<Integer, Pair<Integer, Integer>> cache;
     // freq, keys
