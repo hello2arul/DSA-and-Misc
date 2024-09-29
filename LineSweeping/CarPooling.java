@@ -1,6 +1,8 @@
-package Misc.LineSweeping;
+package LineSweeping;
 
+import java.util.Arrays;
 import java.util.Map;
+import java.util.PriorityQueue;
 import java.util.TreeMap;
 
 /*
@@ -29,6 +31,25 @@ public class CarPooling {
             if(capacity < 0)
                 return false;
         }
+        return true;
+    }
+
+    public boolean carPoolingMinHeap(int[][] trips, int capacity) {
+        // sort by start time
+        Arrays.sort(trips, (a, b) -> Integer.compare(a[1], b[1]));
+        // sort by end time
+        PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> Integer.compare(a[2], b[2]));
+
+        for (int[] trip : trips) {
+            while (!minHeap.isEmpty() && minHeap.peek()[2] <= trip[1])
+                capacity += minHeap.poll()[0];
+            capacity -= trip[0];
+            minHeap.offer(trip);
+            
+            if (capacity < 0)
+                return false; 
+        }
+
         return true;
     }
 }

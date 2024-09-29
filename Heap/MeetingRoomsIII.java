@@ -26,7 +26,7 @@ import java.util.PriorityQueue;
 import java.util.TreeMap;
 
 public class MeetingRoomsIII {
-  public int mostBooked(int n, int[][] meetings) {
+    public int mostBooked(int n, int[][] meetings) {
         Arrays.sort(meetings, (a, b) -> a[0] - b[0]);
         int[] count = new int[n];
         PriorityQueue<int[]> engaged = new PriorityQueue<>((a, b) -> a[1] == b[1] ? a[0] - b[0] : a[1] - b[1]);
@@ -57,4 +57,6 @@ public class MeetingRoomsIII {
             if (count[i] > count[maxRoomId])
                 maxRoomId = i;
         }
+        return maxRoomId;
+    }
 }
