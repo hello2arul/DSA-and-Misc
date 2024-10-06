@@ -47,4 +47,28 @@ public class MyCalenderI {
         booked.add(new int[] {start, end});
         return true;
     }
+
+    public boolean bookLineSweep(int start, int end) {
+        tree.put(start, tree.getOrDefault(start, 0) + 1);
+        tree.put(end, tree.getOrDefault(end, 0) - 1);
+        int count = 0;
+
+        for (Map.Entry<Integer, Integer> entry : tree.entrySet()) {
+            count += entry.getValue();
+            
+            if (count > 1) {
+                tree.put(start, tree.get(start) - 1);
+                tree.put(end, tree.get(end) + 1);
+                
+                // if (tree.get(start) == 0)
+                //     tree.remove(start);
+                // if (tree.get(end) == 0)
+                //     tree.remove(end);
+                
+                return false;
+            }
+
+        }
+        return true;
+    }
 }

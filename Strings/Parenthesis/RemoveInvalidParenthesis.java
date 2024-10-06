@@ -1,4 +1,4 @@
-package BFS;
+package Parenthesis;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -9,6 +9,9 @@ import java.util.Set;
 
 /*
  * https://leetcode.com/problems/remove-invalid-parentheses/description/
+ * Given a string s that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid.
+ * Input: s = "()())()"
+Output: ["(())()","()()()"]
  */
 public class RemoveInvalidParenthesis {
     //to prevent duplicate result, use set
@@ -22,7 +25,7 @@ public class RemoveInvalidParenthesis {
 
     private void dfs(String s, int opening, int closing,StringBuilder curr, int removalCount, 
                     int idx) {
-        if(idx == s.length()) {
+        if (idx == s.length()) {
             if(removalCount == minCount && opening == closing) {
                 result.add(new String(curr));
             } else {
@@ -35,7 +38,7 @@ public class RemoveInvalidParenthesis {
             return;            
         } 
          // if not a paranthesis include the char and recurse
-        if(s.charAt(idx) != '(' && s.charAt(idx) != ')') {
+        if (s.charAt(idx) != '(' && s.charAt(idx) != ')') {
             dfs(s,opening, closing, curr.append(s.charAt(idx)), removalCount, idx + 1);
             curr.deleteCharAt(curr.length() - 1);
         } else {
@@ -43,19 +46,18 @@ public class RemoveInvalidParenthesis {
             dfs(s,opening, closing, curr, removalCount + 1, idx + 1);
             curr.append(s.charAt(idx));
             // if opening, pick and recurse
-            if(s.charAt(idx) == '(')
+            if (s.charAt(idx) == '(')
                 dfs(s, opening + 1, closing, curr, removalCount, idx + 1);
             
             // if it is a closing, check if opening is greater and recurse
-            else if(opening > closing) {
+            else if (opening > closing) {
                 dfs(s, opening, closing + 1, curr, removalCount, idx + 1);
             }
             curr.deleteCharAt(curr.length() - 1);
-            
         } 
     }
 
-      private List<String> removeInvalidParenthesesDFS(String s) {
+      private List<String> removeInvalidParenthesesBFS(String s) {
         List<String> res = new ArrayList<>();
         Queue<String> q = new LinkedList<>();
         Set<String> visited = new HashSet<>();
