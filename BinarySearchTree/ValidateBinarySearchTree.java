@@ -8,7 +8,7 @@ import javax.swing.tree.TreeNode;
  * 2. pass min and max value, check if the node is in range
  * 3. Inorder without using extra array 
  */
-public class IsBST {
+public class ValidateBinarySearchTree {
 
     public boolean isValidBST(TreeNode root) {
         return isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
