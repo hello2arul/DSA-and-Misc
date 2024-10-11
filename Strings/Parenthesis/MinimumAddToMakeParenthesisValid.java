@@ -7,9 +7,9 @@ package Parenthesis;
 public class MinimumAddToMakeParenthesisValid {
     public int minAddToMakeValid(String s) {
         int opens = 0, invalids = 0;
-         for(int i = 0; i < s.length(); i++) {
+         for (int i = 0; i < s.length(); i++) {
              char ch = s.charAt(i);
-             if(ch == '(') {
+             if (ch == '(') {
                  opens++;
              } else {
                  if(opens > 0)   opens--;

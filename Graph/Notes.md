@@ -75,3 +75,6 @@ A graph is a data structure consisting of:
 - **Complexity**: \(O(V + E)\), making it efficient like BFS but suitable for weights of 0 and 1.
 
 ---
+
+## Strongly Connected Components
+-  a graph is said to be strongly connected if every vertex is reachable from every other vertex

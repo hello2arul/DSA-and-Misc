@@ -1,7 +1,7 @@
 package Tree;
 
-//https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
-public class LCA {
+// https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
+public class LowestCommonAncestor {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if(root == null)    return root;
         //we reached either p or q meaning thats the LCA

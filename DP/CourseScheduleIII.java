@@ -25,7 +25,7 @@ Third, take the 2nd course, it costs 200 days so you will finish it on the 1300t
 The 4th course cannot be taken now, since you will finish it on the 3300th day, which exceeds the closed date.
  */
 
-public class CourseSchedule {
+public class CourseScheduleIII {
     public int scheduleCourse(int[][] courses) {
         Arrays.sort(courses, (a, b) -> Integer.compare(a[1], b[1]));
         return dfs(courses, 0, 0, 0);

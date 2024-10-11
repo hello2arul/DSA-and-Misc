@@ -25,7 +25,7 @@ class SegmentTree {
     }
 
     private Node buildTree(int[] nums, int start, int end) {
-        if(start > end) return null;
+        if (start > end) return null;
         Node node = new Node(start, end);
         if(start == end) {
             node.sum = nums[start];
@@ -43,12 +43,12 @@ class SegmentTree {
     }
 
     private void update(Node node, int idx, int val) {
-        if(node.start == node.end) {
+        if (node.start == node.end) {
             node.sum = val;
             return;
         }
         int mid = (node.start + node.end) / 2;
-        if(idx <= mid) {
+        if (idx <= mid) {
             update(node.left, idx, val);
         } else {
             update(node.right, idx, val);
@@ -61,11 +61,11 @@ class SegmentTree {
     }
 
     private int getSum(Node node, int start, int end) {
-        if(node.start == start && node.end == end) {
+        if (node.start == start && node.end == end) {
             return node.sum;
         }
         int mid = (node.start + node.end) / 2;
-        if(end <= mid) {
+        if (end <= mid) {
             return getSum(node.left, start, end);
         } else if(start >= mid + 1) {
             return getSum(node.right, start, end);
