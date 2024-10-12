@@ -2,6 +2,7 @@ package Misc;
 
 /**
  * https://leetcode.com/problems/random-pick-with-weight/
+ * Google
  */
 public class RandomPickWithWeight {
     private ArrayList<Integer> nums;
