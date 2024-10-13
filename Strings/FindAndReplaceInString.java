@@ -5,13 +5,14 @@ import java.util.Map;
 
 /*
  * https://leetcode.com/problems/find-and-replace-in-string
+ * Google
  * Input: s = "abcd", indices = [0, 2], sources = ["a", "cd"], targets = ["eee", "ffff"]
 Output: "eeebffff"
 Explanation:
 "a" occurs at index 0 in s, so we replace it with "eee".
 "cd" occurs at index 2 in s, so we replace it with "ffff".
  */
-public class FindAndReplaceStrings {
+public class FindAndReplaceInString {
      public String findReplaceString(String s, int[] indices, String[] sources, String[] targets) {
         StringBuilder res = new StringBuilder();
         int idx = 0;
