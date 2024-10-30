@@ -5,7 +5,7 @@ import java.util.Arrays;
 /*
  * https://leetcode.com/problems/longest-increasing-subsequence
  */
-public class LIS {
+public class LongestIncreasingSubsequence {
     public int lis(int[] nums, int idx, int prev) {
         if(idx >= nums.length)
             return 0;
