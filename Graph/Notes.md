@@ -19,6 +19,7 @@ A graph is a data structure consisting of:
 - **Bridges**:
   - An edge that, when removed, increases the number of connected components in the graph. 
   - Similar to an articulation point, but applicable to edges.
+  - Can be found using Tarjan's algorithm.
 
 ## Minimum Spanning Tree (MST)
 
