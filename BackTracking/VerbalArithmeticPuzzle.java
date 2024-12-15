@@ -23,73 +23,86 @@ Explanation: Map 'S'-> 9, 'E'->5, 'N'->6, 'D'->7, 'M'->1, 'O'->0, 'R'->8, 'Y'->'
 Such that: "SEND" + "MORE" = "MONEY" ,  9567 + 1085 = 10652
  */
 public class VerbalArithmeticPuzzle {
-    // TODO: TLE
     public boolean isSolvable(String[] words, String result) {
         HashSet<Character> uniqueChars = new HashSet<>();
+        HashSet<Character> startChars = new HashSet<>();
+
         for (String word : words) {
-            for (char ch : word.toCharArray()) {
+            for (int i = 0; i < word.length(); i++) {
+                char ch = word.charAt(i);
+                if (i == 0 && word.length() != 1)
+                    startChars.add(ch);
                 uniqueChars.add(ch);
             }
         }
+        if (result.length() != 0)
+            startChars.add(result.charAt(0));
         for (char ch : result.toCharArray()) {
             uniqueChars.add(ch);
         }
-        // can have only 0-9 nums
+
         if (uniqueChars.size() > 10) return false;
+        // if unique char is 1, map it to 0
+        // [A, A] = "AA" -> false
+        if (uniqueChars.size() == 1 && result.length() == 1) return true;
 
-        // Create an array of unique characters
         Character[] chars = uniqueChars.toArray(new Character[0]);
-        HashMap<Character, Integer> charToIndex = new HashMap<>();
-        for (int i = 0; i < chars.length; i++) {
-            charToIndex.put(chars[i], i);
-        }
+        boolean[] used = new boolean[10]; // Track used digits
+        int[] mapping = new int[128]; // Map characters to digits
 
-        return backtrack(chars, new boolean[10], new int[chars.length], 0, result, words, charToIndex);
+        return backtrack(chars, startChars, mapping, used, 0, words, result);
     }
 
-    private boolean backtrack(Character[] chars, boolean[] used, int[] mapping, int idx, String res, String[] words, HashMap<Character, Integer> charToIndex) {
+    private boolean backtrack(Character[] chars, HashSet<Character> startChars, int[] mapping, boolean[] used, int idx, String[] words, String result) {
         if (idx == chars.length) {
-            return doesMatch(mapping, words, res, charToIndex);
+            return doesMatch(mapping, words, result);
         }
+
         char ch = chars[idx];
-
         for (int digit = 0; digit <= 9; digit++) {
-            if (!used[digit]) {
-                // Set mapping
-                int digitBackup = mapping[idx];
-                mapping[idx] = digit;
-                used[digit] = true;
+            // Skip if the digit is already used
+            if (used[digit]) continue;
 
-                if (backtrack(chars, used, mapping, idx + 1, res, words, charToIndex)) {
-                    return true;
-                }
+            // Skip if this character cannot be mapped to zero
+            if (digit == 0 && startChars.contains(ch) ) continue;
 
-                // Backtrack
-                used[digit] = false;
-                mapping[idx] = digitBackup;
+            // Set mapping
+            mapping[ch] = digit;
+            used[digit] = true;
+
+            // Recur to map the next character
+            if (backtrack(chars, startChars, mapping, used, idx + 1, words, result)) {
+                return true;
             }
-        }
 
+            // Backtrack
+            used[digit] = false;
+            mapping[ch] = 0; // Reset mapping
+        }
         return false;
     }
 
-    private boolean doesMatch(int[] mapping, String[] words, String res, HashMap<Character, Integer> charToIndex) {
-        if (mapping[charToIndex.get(res.charAt(0))] == 0)
-            return false;
+    private boolean doesMatch(int[] mapping, String[] words, String result) {
+        // Check if the leading character of the result is zero
+        // if (mapping[result.charAt(0)] == 0) return false;
+
         int sum = 0;
 
+        // Calculate the sum of the words
         for (String word : words) {
-            if (mapping[charToIndex.get(word.charAt(0))] == 0)
-                return false;
-            sum += convertToNum(mapping, word, charToIndex);
+            // Check if the leading character of the word is zero
+            // if (mapping[word.charAt(0)] == 0) return false;
+            sum += convertToNum(mapping, word);
         }
-        return sum == convertToNum(mapping, res, charToIndex);
+
+        // Calculate the result number
+        return sum == convertToNum(mapping, result);
     }
 
-    private int convertToNum(int[] mapping, String s, HashMap<Character, Integer> charToIndex) {
+    private int convertToNum(int[] mapping, String s) {
         int num = 0;
         for (char ch : s.toCharArray()) {
-            num = (num * 10) + mapping[charToIndex.get(ch)];
+            num = (num * 10) + mapping[ch];
         }
         return num;
     }
