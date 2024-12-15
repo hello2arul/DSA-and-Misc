@@ -23,6 +23,10 @@ Explanation: Map 'S'-> 9, 'E'->5, 'N'->6, 'D'->7, 'M'->1, 'O'->0, 'R'->8, 'Y'->'
 Such that: "SEND" + "MORE" = "MONEY" ,  9567 + 1085 = 10652
  */
 public class VerbalArithmeticPuzzle {
+    // TC - O(10n⋅m)
+    // n -> number of chars
+    // m -> TC of doesMatch
+    // SC - > O(n), recursive call stack depth
     public boolean isSolvable(String[] words, String result) {
         HashSet<Character> uniqueChars = new HashSet<>();
         HashSet<Character> startChars = new HashSet<>();
