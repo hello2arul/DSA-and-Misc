@@ -87,20 +87,14 @@ public class VerbalArithmeticPuzzle {
     }
 
     private boolean doesMatch(int[] mapping, String[] words, String result) {
-        // Check if the leading character of the result is zero
-        // if (mapping[result.charAt(0)] == 0) return false;
-
         int sum = 0;
-
-        // Calculate the sum of the words
+        int resultSum = convertToNum(result, mapping);
         for (String word : words) {
-            // Check if the leading character of the word is zero
-            // if (mapping[word.charAt(0)] == 0) return false;
-            sum += convertToNum(mapping, word);
+            sum += convertToNum(word, mapping);
+            if (sum > resultSum)
+                return false;
         }
-
-        // Calculate the result number
-        return sum == convertToNum(mapping, result);
+        return sum == resultSum;
     }
 
     private int convertToNum(int[] mapping, String s) {
