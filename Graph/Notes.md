@@ -79,3 +79,13 @@ A graph is a data structure consisting of:
 
 ## Strongly Connected Components
 -  a graph is said to be strongly connected if every vertex is reachable from every other vertex
+
+
+### Back edge:
+- A back edge is an edge that is from a node to itself (self-loop) or one of its ancestor in the tree produced by DFS. 
+    ```
+    Eg) 
+    1 -> 2
+    2 -> 3
+    3 -> 1  
+    ```
