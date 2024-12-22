@@ -89,3 +89,7 @@ A graph is a data structure consisting of:
     2 -> 3
     3 -> 1  
     ```
+
+### Topological ordering :
+- Based on indegrees, is only available on a non cyclic graph.
+- Typically done via BFS, but can be done via DFS as well. Refer CourseSchedule I, II.
