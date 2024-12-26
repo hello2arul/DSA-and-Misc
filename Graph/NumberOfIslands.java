@@ -6,7 +6,8 @@ package Graph;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class NoOfIslands {
+// TODO: Disjoint set solution
+public class NumberOfIslands {
     public int numIslands(char[][] grid) {
         int res = 0;
         if(grid == null)
