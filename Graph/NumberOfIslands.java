@@ -6,8 +6,36 @@ package Graph;
 import java.util.LinkedList;
 import java.util.Queue;
 
-// TODO: Disjoint set solution
 public class NumberOfIslands {
+
+    public int numIslandsDS(char[][] grid) {
+        DisjointSet ds = new DisjointSet(grid);       
+        int m = grid.length;
+        int n = grid[0].length;
+        int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == '1') {
+                    for (int[] dir : dirs) {
+                        int x = i + dir[0];
+                        int y = j + dir[1];
+                        
+                        if (isValidDir(x, y, grid)) {
+                            ds.union(x * n + y, i * n + j);
+                        }
+                    }
+                }
+            }
+        } 
+        return ds.count;
+    }
+    
+    private boolean isValidDir(int i, int j, char[][] grid) {
+        return i >= 0 && i < grid.length && j >= 0 && j < grid[0].length 
+               && grid[i][j] == '1'; 
+    }
+
     public int numIslands(char[][] grid) {
         int res = 0;
         if(grid == null)
@@ -58,5 +86,55 @@ public class NumberOfIslands {
     private boolean isInValidDir(char[][] grid, boolean[][] visited, int i, int j) {
         return i < 0 || j < 0 || i >= grid.length || j >= grid[0].length || grid[i][j] != '1' || 
                 visited[i][j];
+    }
+}
+
+class DisjointSet {
+
+    int size;
+    int[] parent;
+    int[] rank;
+    int count;
+
+    DisjointSet(char[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+        parent = new int[m * n];
+        rank = new int[m * n];
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == '1') {
+                    int idx = i * n + j;
+                    parent[idx] = idx;
+                    rank[idx] = idx; 
+                    count++;
+                }
+            }
+        }
+    }
+
+    public int find(int u) {
+        if (u != parent[u]) {
+            parent[u] = find(parent[u]);
+        }
+        return parent[u];
+    }
+
+    public boolean union(int u, int v) {
+        int rootU = find(u);
+        int rootV = find(v);
+
+        if (rootU == rootV)
+            return false;
+        if (rank[rootU] >= rank[rootV]) {
+            parent[rootV] = rootU;
+            rank[rootU] += rank[rootV];
+        } else {
+            parent[rootU] = rootV;
+            rank[rootV] += rank[rootU]; 
+        }
+        count--;
+        return true;
     }
 }

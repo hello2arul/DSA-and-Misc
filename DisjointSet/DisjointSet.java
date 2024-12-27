@@ -40,4 +40,8 @@ public class DisjointSet {
         size--;
         return true;
     }
+
+    private int getHash(int i, int j, int n) {
+        return i * n + j;
+    }
 }
