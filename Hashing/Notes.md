@@ -25,5 +25,5 @@
   3. **Double Hashing**
      - Uses secondary hash function to calculate interval for probing.
 
-## LinkedHashMap
+## LinkedHashMap, LinkedHashSet
 - Maintains the order of insertion of keys.
