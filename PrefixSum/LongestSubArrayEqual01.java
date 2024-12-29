@@ -1,6 +1,7 @@
 package PrefixSum;
 
-//https://leetcode.com/problems/contiguous-array/description/
+// https://leetcode.com/problems/contiguous-array/description/
+// Same as Hashing/SubArraySumEqualsK.java
 
 import java.util.HashMap;
 import java.util.Map;
