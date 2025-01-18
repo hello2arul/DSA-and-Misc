@@ -1,0 +1,641 @@
+Questions not in 1) company list 2) topics list or 3) tagged in last 0-6 months are omitted.
+Questions: 638 || Easy: 156 || Med: 378 || Hard: 104
+#	Title	Difficulty	Frequency	NeetCode	Blacklist
+1	Two Sum	E	10.00	Vid / Code	
+2	LRU Cache	M	5.81	Vid / Code	
+3	Merge Sorted Array	E	5.16	Vid / Code	
+4	Number of Islands	M	4.95	Vid / Code	
+5	Merge Intervals	M	4.84	Vid / Code	
+6	Trapping Rain Water	H	3.91	Vid / Code	
+7	Kth Largest Element in an Array	M	3.81	Vid / Code	
+8	Longest Substring Without Repeating Characters	M	3.79	Vid / Code	
+9	Best Time to Buy and Sell Stock	E	3.44	Vid / Code	
+10	Group Anagrams	M	3.18	Vid / Code	
+11	Longest Palindromic Substring	M	2.99	Vid / Code	
+12	Valid Parentheses	E	2.93	Vid / Code	
+13	Random Pick with Weight	M	2.86		
+14	Find Peak Element	M	2.86	Vid / Code	
+15	Top K Frequent Elements	M	2.80	Vid / Code	
+16	Lowest Common Ancestor of a Binary Tree	M	2.67	Vid / Code	
+17	Subarray Sum Equals K	M	2.67	Vid / Code	
+18	Merge k Sorted Lists	H	2.56	Vid / Code	
+19	Longest Common Prefix	E	2.56	Vid / Code	
+20	Insert Delete GetRandom O(1)	M	2.56	Vid / Code	
+21	Merge Strings Alternately	E	2.41	Vid / Code	
+22	Pow(x, n)	M	2.39	Vid / Code	
+23	Add Two Numbers	M	2.37	Vid / Code	
+24	3Sum	M	2.19	Vid / Code	
+25	Meeting Rooms II	M	2.13	Vid / Code	
+26	Copy List with Random Pointer	M	2.13	Vid / Code	
+27	Maximum Subarray	M	2.09	Vid / Code	
+28	Simplify Path	M	2.07	Vid / Code	
+29	House Robber	M	2.04	Vid / Code	
+30	Median of Two Sorted Arrays	H	2.00	Vid / Code	
+31	Spiral Matrix	M	1.98	Vid / Code	
+32	Binary Tree Right Side View	M	1.87	Vid / Code	
+33	Valid Palindrome	E	1.85	Vid / Code	
+34	Climbing Stairs	E	1.83	Vid / Code	
+35	Move Zeroes	E	1.83	Vid / Code	
+36	Koko Eating Bananas	M	1.81	Vid / Code	
+37	Course Schedule	M	1.81	Vid / Code	
+38	Jump Game	M	1.79	Vid / Code	
+39	Shortest Path in Binary Matrix	M	1.78	Vid / Code	
+40	Word Ladder	H	1.76	Vid / Code	
+41	Range Sum of BST	E	1.76		
+42	Max Consecutive Ones III	M	1.76		
+43	Next Permutation	M	1.74		
+44	Rotate Image	M	1.64	Vid / Code	
+45	Decode String	M	1.63	Vid / Code	
+46	Diameter of Binary Tree	E	1.63	Vid / Code	
+47	Palindrome Number	E	1.55	Vid / Code	
+48	Minimum Number of Increments on Subarrays to Form a Target Array	H	1.55		
+49	Course Schedule II	M	1.53	Vid / Code	
+50	Longest Consecutive Sequence	M	1.51	Vid / Code	
+51	K Closest Points to Origin	M	1.51	Vid / Code	
+52	Container With Most Water	M	1.48	Vid / Code	
+53	Rotting Oranges	M	1.46	Vid / Code	
+54	Roman to Integer	E	1.46	Vid / Code	
+55	Text Justification	H	1.46	Vid / Code	
+56	Word Search	M	1.46	Vid / Code	
+57	Find First and Last Position of Element in Sorted Array	M	1.44	Vid / Code	
+58	Reorganize String	M	1.44	Vid / Code	
+59	Letter Combinations of a Phone Number	M	1.44	Vid / Code	
+60	Search in Rotated Sorted Array	M	1.44	Vid / Code	
+61	Integer to English Words	H	1.40		
+62	Task Scheduler	M	1.40	Vid / Code	
+63	Find Median from Data Stream	H	1.38	Vid / Code	
+64	Product of Array Except Self	M	1.36	Vid / Code	
+65	Binary Tree Maximum Path Sum	H	1.35	Vid / Code	
+66	Minimum Window Substring	H	1.35	Vid / Code	
+67	Generate Parentheses	M	1.35	Vid / Code	
+68	Majority Element	E	1.35	Vid / Code	
+69	Word Break	M	1.33	Vid / Code	
+70	Remove Duplicates from Sorted Array	E	1.31	Vid / Code	
+71	Valid Anagram	E	1.21	Vid / Code	
+72	Vertical Order Traversal of a Binary Tree	H	1.18		
+73	Minimum Add to Make Parentheses Valid	M	1.16		
+74	Interval List Intersections	M	1.16		
+75	Coin Change	M	1.12	Vid / Code	
+76	Merge Two Sorted Lists	E	1.10	Vid / Code	
+77	Reverse Integer	M	1.07	Vid / Code	
+78	Reverse Linked List	E	1.07	Vid / Code	
+79	Moving Average from Data Stream	E	1.05		
+80	Walls and Gates	M	1.03	Vid / Code	
+81	Remove Nth Node From End of List	M	1.03	Vid / Code	
+82	Longest Increasing Subsequence	M	0.99	Vid / Code	
+83	Maximum Swap	M	0.97		
+84	Daily Temperatures	M	0.95	Vid / Code	
+85	Subsets	M	0.95	Vid / Code	
+86	Sliding Window Maximum	H	0.95	Vid / Code	
+87	String Compression	M	0.95		
+88	Happy Number	E	0.93	Vid / Code	
+89	Remove Element	E	0.92	Vid / Code	
+90	Zigzag Conversion	M	0.92		
+91	Best Time to Buy and Sell Stock II	M	0.92	Vid / Code	
+92	Find K Closest Elements	M	0.92	Vid / Code	
+93	Basic Calculator	H	0.88		
+94	Sort Colors	M	0.86	Vid / Code	
+95	Bus Routes	H	0.86		
+96	Accounts Merge	M	0.86	Vid / Code	
+97	Integer to Roman	M	0.84	Vid / Code	
+98	Largest Rectangle in Histogram	H	0.84	Vid / Code	
+99	First Missing Positive	H	0.84	Vid / Code	
+100	Rotate Array	M	0.84	Vid / Code	
+101	LFU Cache	H	0.84		
+102	First Unique Character in a String	E	0.84		
+103	All Nodes Distance K in Binary Tree	M	0.84		
+104	Time Based Key-Value Store	M	0.82	Vid / Code	
+105	Largest Number	M	0.82	Vid / Code	
+106	All O`one Data Structure	H	0.80		
+107	Pascal's Triangle	E	0.80	Vid / Code	
+108	Kth Missing Positive Number	E	0.80		
+109	Identify the Largest Outlier in an Array	M	0.79		
+110	Logger Rate Limiter	E	0.77		
+111	Making A Large Island	H	0.77		
+112	Combination Sum	M	0.75	Vid / Code	
+113	Add Two Integers	E	0.75		
+114	Single Number	E	0.73	Vid / Code	
+115	Alien Dictionary	H	0.73	Vid / Code	
+116	Clone Graph	M	0.73	Vid / Code	
+117	Palindromic Substrings	M	0.71	Vid / Code	
+118	Word Search II	H	0.71	Vid / Code	
+119	Validate Binary Search Tree	M	0.69	Vid / Code	
+120	Maximum Product Subarray	M	0.69	Vid / Code	
+121	Jump Game II	M	0.69	Vid / Code	
+122	Permutation in String	M	0.69	Vid / Code	
+123	Capacity To Ship Packages Within D Days	M	0.67	Vid / Code	
+124	Sqrt(x)	E	0.67	Vid / Code	
+125	Regular Expression Matching	H	0.67	Vid / Code	
+126	Valid Sudoku	M	0.67	Vid / Code	
+127	Asteroid Collision	M	0.67	Vid / Code	
+128	Min Stack	M	0.65	Vid / Code	
+129	Reverse Words in a String	M	0.65		
+130	Design Hit Counter	M	0.65		
+131	4Sum	M	0.64	Vid / Code	
+132	Search Suggestions System	M	0.64		
+133	Find the Index of the First Occurrence in a String	E	0.64	Vid / Code	
+134	Permutations	M	0.64	Vid / Code	
+135	Contains Duplicate II	E	0.64	Vid / Code	
+136	Reverse Nodes in k-Group	H	0.62	Vid / Code	
+137	Add Binary	E	0.60	Vid / Code	
+138	Squares of a Sorted Array	E	0.60	Vid / Code	
+139	Isomorphic Strings	E	0.60	Vid / Code	
+140	Candy	H	0.60		
+141	Search Insert Position	E	0.60	Vid / Code	
+142	Plus One	E	0.60	Vid / Code	
+143	Max Area of Island	M	0.58	Vid / Code	
+144	Combination Sum II	M	0.58	Vid / Code	
+145	Unique Paths	M	0.58	Vid / Code	
+146	Add Strings	E	0.58		
+147	String to Integer (atoi)	M	0.56		
+148	Contains Duplicate	E	0.56	Vid / Code	
+149	Gas Station	M	0.56	Vid / Code	
+150	Remove All Adjacent Duplicates In String	E	0.56		
+151	Find Minimum in Rotated Sorted Array	M	0.56	Vid / Code	
+152	Fizz Buzz	E	0.54		
+153	Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit	M	0.54		
+154	Populating Next Right Pointers in Each Node	M	0.54		
+155	Longest Repeating Character Replacement	M	0.54	Vid / Code	
+156	Group Shifted Strings	M	0.52		
+157	Evaluate Division	M	0.52		
+158	Expression Add Operators	H	0.52		
+159	Kth Smallest Element in a BST	M	0.52	Vid / Code	
+160	Search a 2D Matrix	M	0.52	Vid / Code	
+161	Greatest Common Divisor of Strings	E	0.50		
+162	Minimum Path Sum	M	0.50	Vid / Code	
+163	Design HashMap	E	0.50	Vid / Code	
+164	Set Matrix Zeroes	M	0.50	Vid / Code	
+165	Shortest Path in a Grid with Obstacles Elimination	H	0.50		
+166	Longest Subarray of 1's After Deleting One Element	M	0.50		
+167	Is Subsequence	E	0.50	Vid / Code	
+168	3Sum Closest	M	0.49		
+169	Target Sum	M	0.49	Vid / Code	
+170	Summary Ranges	E	0.49		
+171	Implement Trie (Prefix Tree)	M	0.49	Vid / Code	
+172	House Robber II	M	0.49	Vid / Code	
+173	Continuous Subarray Sum	M	0.49	Vid / Code	
+174	Maximal Square	M	0.47	Vid / Code	
+175	Word Ladder II	H	0.47		
+176	Decode Ways	M	0.47	Vid / Code	
+177	Palindrome Linked List	E	0.47	Vid / Code	
+178	Partition Equal Subset Sum	M	0.47	Vid / Code	
+179	Design Circular Queue	M	0.47	Vid / Code	
+180	Sudoku Solver	H	0.45		
+181	Maximum Depth of Binary Tree	E	0.45	Vid / Code	
+182	Missing Number	E	0.43	Vid / Code	
+183	Maximum Width Ramp	M	0.43		
+184	Evaluate Reverse Polish Notation	M	0.43	Vid / Code	
+185	Remove Duplicates from Sorted Array II	M	0.43	Vid / Code	
+186	Next Greater Element I	E	0.41	Vid / Code	
+187	Symmetric Tree	E	0.41	Vid / Code	
+188	Nested List Weight Sum II	M	0.41		
+189	Smallest Range Covering Elements from K Lists	H	0.41		
+190	Lexicographically Smallest Beautiful String	H	0.41		
+191	Longest Valid Parentheses	H	0.41		
+192	Single Element in a Sorted Array	M	0.41	Vid / Code	
+193	Find the Length of the Longest Common Prefix	M	0.39		
+194	Linked List Cycle	E	0.39	Vid / Code	
+195	Edit Distance	M	0.39	Vid / Code	
+196	Flatten Binary Tree to Linked List	M	0.39		
+197	The Earliest Moment When Everyone Become Friends	M	0.39		
+198	Minimum Area Rectangle	M	0.39		
+199	Binary Tree Level Order Traversal	M	0.39	Vid / Code	
+200	The kth Factor of n	M	0.39		
+201	Find All Anagrams in a String	M	0.39	Vid / Code	
+202	Binary Search	E	0.37	Vid / Code	
+203	Shortest Bridge	M	0.37		
+204	Intersection of Two Linked Lists	E	0.37	Vid / Code	
+205	Fraction to Recurring Decimal	M	0.37		
+206	Frequency of the Most Frequent Element	M	0.37	Vid / Code	
+207	N-Queens	H	0.37	Vid / Code	
+208	Find the Duplicate Number	M	0.37	Vid / Code	
+209	Longest Common Subsequence	M	0.37	Vid / Code	
+210	Fibonacci Number	E	0.37	Vid / Code	
+211	Minimum Cost For Tickets	M	0.37		
+212	Reorder List	M	0.37	Vid / Code	
+213	Regions Cut By Slashes	M	0.37		
+214	Can Place Flowers	E	0.37	Vid / Code	
+215	Shortest Palindrome	H	0.36		
+216	Reverse Linked List II	M	0.36	Vid / Code	
+217	Unique Length-3 Palindromic Subsequences	M	0.36	Vid / Code	
+218	Intersection of Two Arrays	E	0.36		
+219	Cheapest Flights Within K Stops	M	0.36	Vid / Code	
+220	Peak Index in a Mountain Array	M	0.36		
+221	Flood Fill	E	0.36		
+222	Insert Interval	M	0.36	Vid / Code	
+223	Divide Two Integers	M	0.36		
+224	Russian Doll Envelopes	H	0.36		
+225	Unique Paths II	M	0.36	Vid / Code	
+226	Two Sum II - Input Array Is Sorted	M	0.36	Vid / Code	
+227	Palindrome Partitioning	M	0.36	Vid / Code	
+228	Zero Array Transformation I	M	0.34		
+229	Ransom Note	E	0.34		
+230	H-Index	M	0.34		
+231	Rotate String	E	0.34		
+232	Minimum Time Difference	M	0.34		
+233	Middle of the Linked List	E	0.34	Vid / Code	
+234	Split Array Largest Sum	H	0.34	Vid / Code	
+235	Reconstruct Itinerary	H	0.32	Vid / Code	
+236	Odd Even Linked List	M	0.32		
+237	Minimum Size Subarray Sum	M	0.32	Vid / Code	
+238	Number of Distinct Islands	M	0.32		
+239	Guess the Word	H	0.32		
+240	Max Consecutive Ones	E	0.32		
+241	Same Tree	E	0.30	Vid / Code	
+242	Delete and Earn	M	0.30	Vid / Code	
+243	Meeting Scheduler	M	0.30		
+244	Path Sum II	M	0.30		
+245	Power of Two	E	0.30		
+246	Rotate List	M	0.30	Vid / Code	
+247	Check if Array Is Sorted and Rotated	E	0.30		
+248	Shortest Distance from All Buildings	H	0.30		
+249	Perfect Squares	M	0.30		
+250	Reverse Pairs	H	0.28		
+251	Design Add and Search Words Data Structure	M	0.28	Vid / Code	
+252	Move Pieces to Obtain a String	M	0.28		
+253	Partition Array Into Two Arrays to Minimize Sum Difference	H	0.28		
+254	Finding MK Average	H	0.28		
+255	Find the Winner of the Circular Game	M	0.28		
+256	Remove K Digits	M	0.28	Vid / Code	
+257	Construct Binary Tree from Preorder and Inorder Traversal	M	0.28	Vid / Code	
+258	Find All Duplicates in an Array	M	0.28		
+259	Contiguous Array	M	0.28		
+260	Number of Provinces	M	0.28		
+261	Wildcard Matching	H	0.28		
+262	Find Duplicate Subtrees	M	0.28		
+263	Majority Element II	M	0.26		
+264	Search a 2D Matrix II	M	0.26		
+265	Swap Nodes in Pairs	M	0.26	Vid / Code	
+266	Ugly Number II	M	0.26		
+267	Restore IP Addresses	M	0.26		
+268	Find Leaves of Binary Tree	M	0.26		
+269	Remove Sub-Folders from the Filesystem	M	0.26		
+270	Design a Stack With Increment Operation	M	0.26		
+271	Kids With the Greatest Number of Candies	E	0.26		
+272	Longest Substring with At Least K Repeating Characters	M	0.26		
+273	Single-Threaded CPU	M	0.26	Vid / Code	
+274	Reverse String	E	0.26	Vid / Code	
+275	Last Stone Weight	E	0.24	Vid / Code	
+276	Lexicographical Numbers	M	0.24		
+277	Number of Connected Components in an Undirected Graph	M	0.24	Vid / Code	
+278	Sort Characters By Frequency	M	0.24		
+279	Minimum Moves to Equal Array Elements	M	0.24		
+280	Coin Change II	M	0.24	Vid / Code	
+281	Multiply Strings	M	0.24	Vid / Code	
+282	Word Subsets	M	0.24		
+283	Maximal Rectangle	H	0.24		
+284	Surrounded Regions	M	0.24	Vid / Code	
+285	Binary Tree Inorder Traversal	E	0.24	Vid / Code	
+286	Unique Binary Search Trees	M	0.24		
+287	Interleaving String	M	0.24	Vid / Code	
+288	Rank Transform of an Array	E	0.24		
+289	Longest Happy String	M	0.24		
+290	Separate Black and White Balls	M	0.24		
+291	Triangle	M	0.22	Vid / Code	
+292	Kth Largest Element in a Stream	E	0.22	Vid / Code	
+293	Transpose Matrix	E	0.22		
+294	My Calendar I	M	0.22		
+295	Remove Duplicates from Sorted List	E	0.22	Vid / Code	
+296	Design Search Autocomplete System	H	0.22		
+297	Subsets II	M	0.22	Vid / Code	
+298	Parsing A Boolean Expression	H	0.22		
+299	Maximum Average Subarray I	E	0.22		
+300	Meeting Rooms III	H	0.22		
+301	Delete Nodes And Return Forest	M	0.22		
+302	Range Module	H	0.22		
+303	Sort an Array	M	0.22	Vid / Code	
+304	Pacific Atlantic Water Flow	M	0.22	Vid / Code	
+305	Stock Price Fluctuation	M	0.21		
+306	Different Ways to Add Parentheses	M	0.21		
+307	K-diff Pairs in an Array	M	0.21		
+308	01 Matrix	M	0.21		
+309	Count the Number of Fair Pairs	M	0.21		
+310	Number of 1 Bits	E	0.21	Vid / Code	
+311	Increasing Triplet Subsequence	M	0.21		
+312	Number of Ways to Form a Target String Given a Dictionary	H	0.21		
+313	Populating Next Right Pointers in Each Node II	M	0.21		
+314	Check If Array Pairs Are Divisible by k	M	0.21		
+315	Find the Smallest Divisor Given a Threshold	M	0.21		
+316	The Skyline Problem	H	0.21		
+317	Delete Node in a BST	M	0.21	Vid / Code	
+318	First Bad Version	E	0.21		
+319	Combinations	M	0.21	Vid / Code	
+320	Best Time to Buy and Sell Stock III	H	0.21		
+321	Find the Maximum Sequence Value of Array	H	0.19		
+322	Best Sightseeing Pair	M	0.19		
+323	Reverse Vowels of a String	E	0.19		
+324	Maximum Sum of 3 Non-Overlapping Subarrays	H	0.19		
+325	Partition List	M	0.19	Vid / Code	
+326	Binary Subarrays With Sum	M	0.19		
+327	Detonate the Maximum Bombs	M	0.19		
+328	Height of Binary Tree After Subtree Removal Queries	H	0.19		
+329	Divide Nodes Into the Maximum Number of Groups	H	0.19		
+330	String Compression III	M	0.19		
+331	Sum of Two Integers	M	0.19	Vid / Code	
+332	Is Graph Bipartite?	M	0.19		
+333	Minimum Number of Operations to Move All Balls to Each Box	M	0.19		
+334	The Number of the Smallest Unoccupied Chair	M	0.19		
+335	Maximum Points You Can Obtain from Cards	M	0.19		
+336	Shortest Subarray with Sum at Least K	H	0.19		
+337	Battleships in a Board	M	0.19		
+338	Zero Array Transformation II	M	0.19		
+339	Subarrays with K Different Integers	H	0.19		
+340	Spiral Matrix III	M	0.17		
+341	Excel Sheet Column Title	E	0.17	Vid / Code	
+342	Invert Binary Tree	E	0.17	Vid / Code	
+343	Score of a String	E	0.17		
+344	Maximum Sum Circular Subarray	M	0.17	Vid / Code	
+345	Sort List	M	0.17	Vid / Code	
+346	Add Digits	E	0.17		
+347	Linked List Cycle II	M	0.17		
+348	Two City Scheduling	M	0.17	Vid / Code	
+349	Unique Number of Occurrences	E	0.17		
+350	Range Sum Query - Immutable	E	0.17	Vid / Code	
+351	Check If N and Its Double Exist	E	0.17		
+352	Water Bottles	E	0.17		
+353	House Robber III	M	0.17		
+354	Longest Absolute File Path	M	0.17		
+355	Maximum Number of Points with Cost	M	0.17		
+356	Two Best Non-Overlapping Events	M	0.17		
+357	Minimized Maximum of Products Distributed to Any Store	M	0.17		
+358	Balanced Binary Tree	E	0.17	Vid / Code	
+359	Shifting Letters II	M	0.17		
+360	Find Pivot Index	E	0.17	Vid / Code	
+361	Min Cost Climbing Stairs	E	0.17	Vid / Code	
+362	Count Primes	M	0.17		
+363	Assign Cookies	E	0.15		
+364	Maximum Score After Splitting a String	E	0.15		
+365	Intersection of Two Arrays II	E	0.15		
+366	Minimum Limit of Balls in a Bag	M	0.15		
+367	Implement Stack using Queues	E	0.15	Vid / Code	
+368	Find K Pairs with Smallest Sums	M	0.15		
+369	Online Stock Span	M	0.15	Vid / Code	
+370	Sort Array By Parity	E	0.15		
+371	XOR Queries of a Subarray	M	0.15		
+372	Furthest Building You Can Reach	M	0.15	Vid / Code	
+373	Sum of Subarray Minimums	M	0.15		
+374	Flip Columns For Maximum Number of Equal Rows	M	0.15		
+375	Number of Ways to Split Array	M	0.15		
+376	Basic Calculator III	H	0.15		
+377	Convert Sorted List to Binary Search Tree	M	0.15		
+378	Minimum Number of Changes to Make Binary String Beautiful	M	0.15		
+379	Water and Jug Problem	M	0.15		
+380	Find the Difference	E	0.15		
+381	Split Linked List in Parts	M	0.15		
+382	Running Sum of 1d Array	E	0.15		
+383	Find All Possible Recipes from Given Supplies	M	0.15		
+384	Minimum Deletions to Make String Balanced	M	0.13		
+385	Sliding Puzzle	H	0.13		
+386	Find the Safest Path in a Grid	M	0.13		
+387	Swapping Nodes in a Linked List	M	0.13	Vid / Code	
+388	Graph Valid Tree	M	0.13	Vid / Code	
+389	Minimum Number of Refueling Stops	H	0.13		
+390	Valid Square	M	0.13		
+391	Redundant Connection	M	0.13	Vid / Code	
+392	Max Chunks To Make Sorted	M	0.13		
+393	Snapshot Array	M	0.13		
+394	Minimum Increment to Make Array Unique	M	0.13		
+395	K-th Smallest in Lexicographical Order	H	0.13		
+396	Length of Last Word	E	0.13	Vid / Code	
+397	Find the Town Judge	E	0.13		
+398	Divide Intervals Into Minimum Number of Groups	M	0.13		
+399	Minimum Array End	M	0.13		
+400	Android Unlock Patterns	M	0.13		
+401	Count Complete Tree Nodes	E	0.13		
+402	Minimum Number of Days to Make m Bouquets	M	0.13		
+403	Minimum Number of Swaps to Make the String Balanced	M	0.13	Vid / Code	
+404	Range Sum of Sorted Subarray Sums	M	0.13		
+405	Largest Odd Number in String	E	0.11		
+406	Most Stones Removed with Same Row or Column	M	0.11		
+407	Count Number of Maximum Bitwise-OR Subsets	M	0.11		
+408	Substring with Concatenation of All Words	H	0.11		
+409	Longest Subarray With Maximum Bitwise AND	M	0.11		
+410	Find Largest Value in Each Tree Row	M	0.11		
+411	Odd Even Jump	H	0.11		
+412	Construct K Palindrome Strings	M	0.11		
+413	Valid Perfect Square	E	0.11	Vid / Code	
+414	Find Missing and Repeated Values	E	0.11		
+415	Baseball Game	E	0.11	Vid / Code	
+416	String Matching in an Array	E	0.11		
+417	Stone Game II	M	0.11		
+418	Take K of Each Character From Left and Right	M	0.11		
+419	Rearrange Array Elements by Sign	M	0.11		
+420	Integer Break	M	0.11		
+421	Find Longest Special Substring That Occurs Thrice I	M	0.11		
+422	Convert 1D Array Into 2D Array	E	0.11		
+423	Maximal Score After Applying K Operations	M	0.11		
+424	Minimum Bit Flips to Convert Number	E	0.11		
+425	Convert Sorted Array to Binary Search Tree	E	0.11	Vid / Code	
+426	Count Number of Pairs With Absolute Difference K	E	0.11		
+427	Parallel Courses III	H	0.11		
+428	Optimal Partition of String	M	0.11	Vid / Code	
+429	Design Circular Deque	M	0.11		
+430	Maximum Beauty of an Array After Applying Operation	M	0.11		
+431	Find Score of an Array After Marking All Elements	M	0.11		
+432	Finding 3-Digit Even Numbers	E	0.11		
+433	Design Twitter	M	0.11	Vid / Code	
+434	Critical Connections in a Network	H	0.11		
+435	Time Taken to Cross the Door	H	0.09		
+436	Reverse Odd Levels of Binary Tree	M	0.09		
+437	Flipping an Image	E	0.09		
+438	Predict the Winner	M	0.09		
+439	Subtree of Another Tree	E	0.09	Vid / Code	
+440	Defanging an IP Address	E	0.09		
+441	Maximum Area Rectangle With Point Constraints I	M	0.09		
+442	Minimum Falling Path Sum	M	0.09	Vid / Code	
+443	Permutation Sequence	H	0.09		
+444	Remove Duplicates from Sorted List II	M	0.09		
+445	Burst Balloons	H	0.09	Vid / Code	
+446	Jewels and Stones	E	0.09		
+447	Remove Linked List Elements	E	0.09	Vid / Code	
+448	Find Eventual Safe States	M	0.09		
+449	Race Car	H	0.09		
+450	Combination Sum IV	M	0.09	Vid / Code	
+451	Longest Palindrome	E	0.09		
+452	Queue Reconstruction by Height	M	0.09		
+453	Find a Safe Walk Through a Grid	M	0.09		
+454	Number of Digit One	H	0.09		
+455	Elimination Game	M	0.09		
+456	Find the Power of K-Size Subarrays I	M	0.09		
+457	Maximum Matrix Sum	M	0.09		
+458	Check if Word Can Be Placed In Crossword	M	0.09		
+459	Sort the Jumbled Numbers	M	0.09		
+460	Largest Combination With Bitwise AND Greater Than Zero	M	0.09		
+461	Strange Printer	H	0.07		
+462	Count Palindromic Subsequences	H	0.07		
+463	Count Good Numbers	M	0.07		
+464	Nearest Exit from Entrance in Maze	M	0.07		
+465	N-ary Tree Postorder Traversal	E	0.07		
+466	Jump Game VI	M	0.07		
+467	Network Delay Time	M	0.07	Vid / Code	
+468	Determine if Two Strings Are Close	M	0.07		
+469	Sort Transformed Array	M	0.07		
+470	Maximum Gap	M	0.07		
+471	Lemonade Change	E	0.07		
+472	Describe the Painting	M	0.07		
+473	Maximum Good Subarray Sum	M	0.07		
+474	Shortest Unsorted Continuous Subarray	M	0.07		
+475	Removing Stars From a String	M	0.07	Vid / Code	
+476	Minimum Difference Between Highest and Lowest of K Scores	E	0.07	Vid / Code	
+477	Boats to Save People	M	0.07	Vid / Code	
+478	Spiral Matrix II	M	0.07		
+479	Minimum Number of Operations to Make Array Continuous	H	0.07		
+480	Continuous Subarrays	M	0.07		
+481	Maximum Product of Word Lengths	M	0.07		
+482	Check If a Word Occurs As a Prefix of Any Word in a Sentence	E	0.07		
+483	Possible Bipartition	M	0.07		
+484	Shortest Subarray With OR at Least K II	M	0.07		
+485	Row With Maximum Ones	E	0.07		
+486	Linked List Random Node	M	0.07		
+487	Remove Boxes	H	0.07		
+488	Second Minimum Time to Reach Destination	H	0.07		
+489	Count Number of Nice Subarrays	M	0.07		
+490	Design Task Manager	M	0.07		
+491	Arranging Coins	E	0.07	Vid / Code	
+492	Combination Sum III	M	0.07		
+493	Minimum Obstacle Removal to Reach Corner	H	0.07		
+494	Construct Binary Tree from Inorder and Postorder Traversal	M	0.07	Vid / Code	
+495	Longest Arithmetic Subsequence of Given Difference	M	0.07		
+496	Step-By-Step Directions From a Binary Tree Node to Another	M	0.07		
+497	Long Pressed Name	E	0.07		
+498	Count Special Subsequences	M	0.07		
+499	Adjacent Increasing Subarrays Detection I	E	0.07		
+500	Construct String With Repeat Limit	M	0.07		
+501	Take Gifts From the Richest Pile	E	0.07		
+502	Sender With Largest Word Count	M	0.07		
+503	Filling Bookcase Shelves	M	0.07		
+504	Minimum Moves to Equal Array Elements II	M	0.07		
+505	Counting Bits	E	0.07	Vid / Code	
+506	Minimum Penalty for a Shop	M	0.07		
+507	UTF-8 Validation	M	0.07		
+508	Find Closest Number to Zero	E	0.07		
+509	Minimum Interval to Include Each Query	H	0.07	Vid / Code	
+510	Maximum Average Pass Ratio	M	0.07		
+511	Determine Whether Matrix Can Be Obtained By Rotation	E	0.07		
+512	Maximum Number of Operations to Move Ones to the End	M	0.06		
+513	K-th Largest Perfect Subtree Size in Binary Tree	M	0.06		
+514	Campus Bikes	M	0.06		
+515	Number of Submatrices That Sum to Target	H	0.06		
+516	Number of Dice Rolls With Target Sum	M	0.06		
+517	Wiggle Sort	M	0.06	Vid / Code	
+518	Repeated String Match	M	0.06		
+519	Count of Smaller Numbers After Self	H	0.06		
+520	Tweet Counts Per Frequency	M	0.06		
+521	RLE Iterator	M	0.06		
+522	Uncommon Words from Two Sentences	E	0.06		
+523	Pascal's Triangle II	E	0.06		
+524	Final Prices With a Special Discount in a Shop	E	0.06		
+525	Create Maximum Number	H	0.06		
+526	Path with Maximum Probability	M	0.06	Vid / Code	
+527	Path With Minimum Effort	M	0.06		
+528	Minimum Operations to Reduce X to Zero	M	0.06		
+529	Richest Customer Wealth	E	0.06		
+530	Restore the Array From Adjacent Pairs	M	0.06		
+531	Convert a Number to Hexadecimal	E	0.06		
+532	Power of Four	E	0.06		
+533	Build Array from Permutation	E	0.06		
+534	Employee Free Time	H	0.06		
+535	Number of Unique Good Subsequences	H	0.06		
+536	Find Original Array From Doubled Array	M	0.06		
+537	Swap Adjacent in LR String	M	0.06		
+538	Make Array Non-decreasing or Non-increasing	H	0.06		
+539	Smallest Number in Infinite Set	M	0.06		
+540	Keys and Rooms	M	0.06		
+541	Find And Replace in String	M	0.06		
+542	Shortest Distance to a Character	E	0.06		
+543	Minimum Time to Visit a Cell In a Grid	H	0.06		
+544	Cousins in Binary Tree II	M	0.06		
+545	Number of Senior Citizens	E	0.06		
+546	Modify Graph Edge Weights	H	0.06		
+547	Ugly Number	E	0.06	Vid / Code	
+548	Count the Number of Substrings With Dominant Ones	M	0.06		
+549	Evaluate Boolean Binary Tree	E	0.04		
+550	Spiral Matrix IV	M	0.04		
+551	Maximum Subsequence Score	M	0.04		
+552	Design a Text Editor	H	0.04		
+553	Count Unguarded Cells in the Grid	M	0.04		
+554	Find the Difference of Two Arrays	E	0.04	Vid / Code	
+555	Detect Capital	E	0.04		
+556	Maximum XOR Score Subarray Queries	H	0.04		
+557	Most Beautiful Item for Each Query	M	0.04		
+558	Contains Duplicate III	H	0.04		
+559	To Lower Case	E	0.04		
+560	Prime Subtraction Operation	M	0.04		
+561	K-th Nearest Obstacle Queries	M	0.04		
+562	Hand of Straights	M	0.04	Vid / Code	
+563	Shortest Path Visiting All Nodes	H	0.04		
+564	Minimum Additions to Make Valid String	M	0.04		
+565	Next Closest Time	M	0.04		
+566	24 Game	H	0.04		
+567	Find the Key of the Numbers	E	0.04		
+568	Relative Ranks	E	0.04		
+569	Detect Squares	M	0.04	Vid / Code	
+570	Number of Ways to Arrive at Destination	M	0.04		
+571	Shortest String That Contains Three Strings	M	0.04		
+572	Cherry Pickup	H	0.04		
+573	Concatenation of Array	E	0.04	Vid / Code	
+574	Find the Student that Will Replace the Chalk	M	0.04		
+575	Sorting the Sentence	E	0.04		
+576	Maximum Number of Accepted Invitations	M	0.04		
+577	Evaluate the Bracket Pairs of a String	M	0.04		
+578	Power of Three	E	0.04		
+579	Number of Students Unable to Eat Lunch	E	0.04		
+580	Defuse the Bomb	E	0.04		
+581	Detect Cycles in 2D Grid	M	0.04		
+582	Divide Array Into Arrays With Max Difference	M	0.04		
+583	Minimum Cost to Convert String I	M	0.04		
+584	Minimum Number of Days to Eat N Oranges	H	0.04		
+585	Number of Good Ways to Split a String	M	0.04		
+586	Minimum Difference Between Largest and Smallest Value in Three Moves	M	0.04		
+587	Maximum Length of Pair Chain	M	0.04		
+588	Count Prefix and Suffix Pairs I	E	0.04		
+589	Find Minimum in Rotated Sorted Array II	H	0.04		
+590	Stone Game	M	0.04		
+591	Subrectangle Queries	M	0.04		
+592	Count Substrings With K-Frequency Characters I	M	0.04		
+593	Minimum Division Operations to Make Array Non Decreasing	M	0.04		
+594	Fair Candy Swap	E	0.04		
+595	Find All Good Strings	H	0.04		
+596	Sentence Screen Fitting	M	0.04		
+597	Minimum Cost to Make at Least One Valid Path in a Grid	H	0.04		
+598	How Many Numbers Are Smaller Than the Current Number	E	0.04		
+599	Number of Steps to Reduce a Number to Zero	E	0.04		
+600	Maximum XOR of Two Numbers in an Array	M	0.04		
+601	Sum of Square Numbers	M	0.04		
+602	Count Square Submatrices with All Ones	M	0.04		
+603	Reconstruct Original Digits from English	M	0.04		
+604	Student Attendance Record II	H	0.04		
+605	Range Sum Query 2D - Mutable	H	0.04		
+606	Minimum Genetic Mutation	M	0.04		
+607	Scramble String	H	0.04		
+608	Maximize Subarray Sum After Removing All Occurrences of One Element	H	0.04		
+609	Number of Segments in a String	E	0.04		
+610	Smallest String Starting From Leaf	M	0.04		
+611	Day of the Year	E	0.04		
+612	4Sum II	M	0.04		
+613	Maximize Amount After Two Days of Conversions	M	0.04		
+614	Corporate Flight Bookings	M	0.04		
+615	Maximum Frequency of an Element After Performing Operations II	H	0.04		
+616	Single Number III	M	0.04		
+617	Sum of Good Subsequences	H	0.04		
+618	Knight Dialer	M	0.04		
+619	Duplicate Zeros	E	0.04		
+620	Distinct Subsequences II	H	0.04		
+621	Alternating Groups II	M	0.04		
+622	Count Numbers with Unique Digits	M	0.04		
+623	Find X-Sum of All K-Long Subarrays I	E	0.04		
+624	Largest Component Size by Common Factor	H	0.04		
+625	Maximum Possible Number by Binary Concatenation	M	0.04		
+626	Minimum Score Triangulation of Polygon	M	0.04		
+627	Teemo Attacking	E	0.04		
+628	Number of Enclaves	M	0.04		
+629	Reveal Cards In Increasing Order	M	0.04		
+630	Reach End of Array With Max Score	M	0.04		
+631	Find Common Characters	E	0.04		
+632	Minimum Number of Operations to Sort a Binary Tree by Level	M	0.04		
+633	Convert the Temperature	E	0.04		
+634	Sort the People	E	0.04		
+635	Longest Increasing Subsequence II	H	0.04		
+636	Build a Matrix With Conditions	H	0.04		
+637	Equal Row and Column Pairs	M	0.04		
+638	The Latest Time to Catch a Bus	M	0.04		

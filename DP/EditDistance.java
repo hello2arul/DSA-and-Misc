@@ -1,7 +1,9 @@
 package DP;
 
 /*
- * https://leetcode.com/problems/edit-distance/description/
+https://leetcode.com/problems/edit-distance/description/
+
+AKA Levenshtein distance
  */
 public class EditDistance {
     public int minDistance(String word1, String word2) {
