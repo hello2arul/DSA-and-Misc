@@ -11,8 +11,10 @@ import java.util.Queue;
 import java.util.Set;
 
 /**
- * https://leetcode.com/problems/smallest-string-with-swaps
- * ou are given a string s, and an array of pairs of indices in the string pairs where pairs[i] = [a, b] indicates 2 indices(0-indexed) of the string.
+https://leetcode.com/problems/smallest-string-with-swaps
+Google
+
+You are given a string s, and an array of pairs of indices in the string pairs where pairs[i] = [a, b] indicates 2 indices(0-indexed) of the string.
 
 You can swap the characters at any pair of indices in the given pairs any number of times.
 
@@ -26,7 +28,6 @@ Explaination:
 Swap s[0] and s[3], s = "bcad"
 Swap s[1] and s[2], s = "bacd"
  */
-
 public class SmallestStringWithSwaps {
     public String smallestStringWithSwaps(String s, List<List<Integer>> pairs) {
         int n = s.length();
