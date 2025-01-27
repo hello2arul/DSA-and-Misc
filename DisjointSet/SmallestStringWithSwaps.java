@@ -29,6 +29,10 @@ Swap s[0] and s[3], s = "bcad"
 Swap s[1] and s[2], s = "bacd"
  */
 public class SmallestStringWithSwaps {
+
+    // Time Complexity: O(n log n + m), where n is the length of the string and m is
+    // the number of pairs.
+    // Space Complexity: O(n), where n is the length of the string.
     public String smallestStringWithSwaps(String s, List<List<Integer>> pairs) {
         int n = s.length();
         DisjointSet dj = new DisjointSet(n);
@@ -46,6 +50,7 @@ public class SmallestStringWithSwaps {
         }
 
         for (List<Integer> idx: map.values()) {
+            // can use PriorityQueue instead of sorting
             List<Character> chars = new ArrayList<>();
 
             for (int i: idx)
@@ -59,6 +64,8 @@ public class SmallestStringWithSwaps {
         return sb.toString();
     } 
 
+    // O(n!) both time and space in worst case
+    // if the input pairs explores all possible swaps
     public String smallestStringWithSwapsBFS(String s, List<List<Integer>> pairs) {
         Set<String> visited = new HashSet<>();
         Queue<String> q = new LinkedList<>();

@@ -9,4 +9,8 @@ As explained above, there are generally two types of operations performed on a D
 * Union(A, B): This operation tells to merge the sets containing elements A and B respectively by performing a Union operation on the sets.
 * Find(A): This operation tells to find the subset to which the element A belongs.
 
+### Time Complexity
+- **Find**: `O(α(n))`, where `α(n)` is the inverse Ackermann function. This is nearly constant time.
+- **Union**: `O(α(n))`, where `α(n)` is the inverse Ackermann function. This is nearly constant time.
+
 https://leetcode.com/tag/union-find/

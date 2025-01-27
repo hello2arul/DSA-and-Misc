@@ -1,5 +1,10 @@
 
 ## DSA
+
+- **Big O (O)**: Upper bound (worst-case scenario)
+- **Big Omega (Ω)**: Lower bound (best-case scenario)
+- **Big Theta (Θ)**: Exact bound (average-case scenario)
+
 ### Optimizing with BUD
 - Bottlenecks
 - Unnecessary work

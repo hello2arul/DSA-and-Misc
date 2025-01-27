@@ -36,7 +36,7 @@ public class MeetingRoomsIII {
         for (int i = 0; i < n; i++) {
             unused.offer(i);
         }
-        for (int[] meeting: meetings) {
+        for (int[] meeting : meetings) {
             int start = meeting[0], end = meeting[1];
             while (!engaged.isEmpty() && engaged.peek()[1] <= start) {
                 int room = engaged.poll()[0];
@@ -45,13 +45,17 @@ public class MeetingRoomsIII {
             if (unused.size() > 0) {
                 int room = unused.poll();
                 count[room]++;
-                engaged.offer(new int[] {room, end});
+                engaged.offer(new int[] { room, end });
             } else {
                 int[] cur = engaged.poll();
                 int room = cur[0], curEnd = cur[1];
                 count[room]++;
+                // since we are going to be iterating to the next 
+                // meeting in the loop, newEnd means here that we are
+                // going to start the meeting immediately after cur ends
+                // in the same room
                 int newEnd = curEnd + end - start;
-                engaged.offer(new int[] {room, newEnd});
+                engaged.offer(new int[] { room, newEnd });
             }
         }
         int maxRoomId = 0;

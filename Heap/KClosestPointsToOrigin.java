@@ -5,6 +5,7 @@ import java.util.PriorityQueue;
 
 /*
 https://leetcode.com/problems/k-closest-points-to-origin/
+Meta
 naive: sort
 */
 public class KClosestPointsToOrigin {

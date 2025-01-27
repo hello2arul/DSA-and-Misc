@@ -1,7 +1,8 @@
 package Heap;
 
 /*
- * https://neetcode.io/problems/meeting-schedule-ii
+https://neetcode.io/problems/meeting-schedule-ii
+
 Given an array of meeting time interval objects consisting of start and end times 
 [[start_1,end_1],[start_2,end_2],...] (start_i < end_i), 
 find the minimum number of days required to schedule all meetings without any conflicts.
@@ -13,6 +14,7 @@ Input: intervals = [(0,40),(5,10),(15,20)]
 Output: 2
  */
 public class MeetingRoomsII {
+
     public static int minMeetingRooms(List<Interval>  intervals) {
         // Edge case: if no intervals, return 0 days
         if (intervals == null || intervals.isEmpty()) {
@@ -42,6 +44,24 @@ public class MeetingRoomsII {
 
         // The number of days needed is the size of the heap
         return minHeap.size();
+    }
+
+    public int minMeetingRoomsLineSweep(List<Interval> intervals) {
+        TreeMap<Integer, Integer> lines = new TreeMap<>();
+
+        for (Interval interval : intervals) {
+            lines.put(interval.start, lines.getOrDefault(interval.start, 0) + 1);
+            lines.put(interval.end, lines.getOrDefault(interval.end, 0) - 1);
+        }
+
+        int mx = 0, cnt = 0;
+
+        for (int x : lines.values()) {
+            cnt += x;
+            mx = Math.max(mx, cnt);
+        }   
+
+        return mx;
     }
 
 }

@@ -88,6 +88,7 @@ public class MakeLexicographicallySmallestArrayBySwappingElements {
             for (int index : group) {
                 values.add(nums[index]);
             }
+            // could use prioity queue instead of sorting
             Collections.sort(values);
             for (int i = 0; i < group.size(); i++) {
                 nums[group.get(i)] = values.get(i);
