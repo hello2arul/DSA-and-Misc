@@ -41,7 +41,7 @@ public class DisjointSet {
         return true;
     }
 
-    private int getHash(int i, int j, int n) {
+    public int getHash(int i, int j, int n) {
         return i * n + j;
     }
 }

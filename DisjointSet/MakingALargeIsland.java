@@ -4,6 +4,7 @@ import java.util.*;
 
 /*
 https://leetcode.com/problems/making-a-large-island/
+Google
 
 You are given an n x n binary matrix grid. You are allowed to change at most one 0 to be 1.
 
@@ -19,6 +20,8 @@ Example 3:
 Input: grid = [[1,1],[1,1]]
 Output: 4
 Explanation: Can't change any 0 to 1, only one island with area = 4.
+
+similar: CountServersThatCommunicate.java
 */
 public class MakingALargeIsland {
     public int largestIsland(int[][] grid) {
@@ -103,7 +106,8 @@ class DisjointSet {
         int rootU = find(u);
         int rootV = find(v);
 
-        if (rootU == rootV) return false;
+        if (rootU == rootV)
+            return false;
 
         if (size[rootU] >= size[rootV]) {
             parent[rootV] = rootU;
