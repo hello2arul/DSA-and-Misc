@@ -6,6 +6,7 @@ import java.util.Set;
 
 /*
 https://leetcode.com/problems/unique-length-3-palindromic-subsequences
+Google, Amazon, Meta, Bloomberg
 
 Given a string s, return the number of unique palindromes of length three 
 that are a subsequence of s.

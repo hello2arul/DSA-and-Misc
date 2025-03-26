@@ -20,18 +20,18 @@ public class WordLadder {
         q.offer(beginWord);
         int level = 0;
         Set<String> visited = new HashSet<>();
-        
-        while(!q.isEmpty()) {
+
+        while (!q.isEmpty()) {
             level++;
-            for(int i = q.size(); i > 0; i--) {
+            for (int i = q.size(); i > 0; i--) {
                 String cur = q.poll();
                 visited.add(cur);
 
-                if(cur.equals(endWord)) {
+                if (cur.equals(endWord)) {
                     return level;
                 }
 
-                for(String s: getOneDiffWords(cur, wordList, visited)) {
+                for (String s : getOneDiffWords(cur, wordList, visited)) {
                     q.offer(s);
                 }
             }
@@ -42,17 +42,17 @@ public class WordLadder {
 
     private List<String> getOneDiffWords(String cur, List<String> words, Set<String> visited) {
         List<String> results = new ArrayList<>();
-        for(String word: words) {
+        for (String word : words) {
             int diff = 0;
-            if(!visited.contains(word) && cur.length() == word.length()) {
-                for(int i = 0; i < cur.length(); i++) {
-                    if(cur.charAt(i) != word.charAt(i)) {
-                        if(++diff > 1)
+            if (!visited.contains(word) && cur.length() == word.length()) {
+                for (int i = 0; i < cur.length(); i++) {
+                    if (cur.charAt(i) != word.charAt(i)) {
+                        if (++diff > 1)
                             break;
                     }
                 }
             }
-            if(diff == 1)
+            if (diff == 1)
                 results.add(word);
         }
         return results;

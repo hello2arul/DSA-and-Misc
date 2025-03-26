@@ -40,31 +40,46 @@ TODO:
 public class SingleThreadedCPU {
     public int[] getOrder(int[][] tasks) {
         int n = tasks.length;
-        int[] ans = new int[n];
+        int[] res = new int[n];
+
+        // this is needed because we sort this and the indexing is lost
         int[][] extTasks = new int[n][3];
         for (int i = 0; i < n; i++) {
-            extTasks[i][0] = i;
-            extTasks[i][1] = tasks[i][0];
-            extTasks[i][2] = tasks[i][1];
+            extTasks[i][0] = tasks[i][0]; // enqueueTime
+            extTasks[i][1] = tasks[i][1]; // processingTime
+            extTasks[i][2] = i; // original index
         }
-        Arrays.sort(extTasks, (a, b) -> a[1] - b[1]);
-        PriorityQueue<int[]> pq = new PriorityQueue<int[]>((a, b) -> a[2] == b[2] ? a[0] - b[0] : a[2] - b[2]);
-        int time = 0;
-        int ai = 0;
-        int ti = 0;
-        while (ai < n) {
-            while (ti < n && extTasks[ti][1] <= time) {
-                pq.offer(extTasks[ti++]);
 
+        // Step 2: Sort tasks by enqueueTime
+        Arrays.sort(extTasks, (a, b) -> Integer.compare(a[0], b[0]));
+
+        // Step 3: Use a priority queue to manage available tasks
+        PriorityQueue<int[]> availableTasks = new PriorityQueue<>(
+                (a, b) -> a[1] != b[1] ? Integer.compare(a[1], b[1]) : Integer.compare(a[2], b[2]));
+
+        int time = 0; // Current time
+        int taskIdx = 0; // Index to iterate over tasks
+        int resIdx = 0; // Index to fill the result array
+
+        // Step 4: Process tasks
+        while (resIdx < n) {
+            // Add all tasks that are available at the current time to the priority queue
+            while (taskIdx < n && extTasks[taskIdx][0] <= time) {
+                availableTasks.offer(extTasks[taskIdx++]);
             }
-            if (pq.isEmpty()) {
-                time = extTasks[ti][1];
+
+            // If no tasks are available, move the time to the next task's enqueueTime
+            if (availableTasks.isEmpty()) {
+                time = extTasks[taskIdx][0];
                 continue;
             }
-            int[] bestFit = pq.poll();
-            ans[ai++] = bestFit[0];
-            time += bestFit[2];
+
+            // Process the task with the shortest processing time (or smallest index)
+            int[] curTask = availableTasks.poll();
+            res[resIdx++] = curTask[2]; // Add the original index of the task to the result
+            time += curTask[1]; // Increment the time by the task's processing time
         }
-        return ans;
+
+        return res;
     }
 }

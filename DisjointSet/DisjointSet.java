@@ -2,7 +2,7 @@ package DisjointSet;
 
 public class DisjointSet {
 
-    private int[] rank;
+    public int[] rank;
     private int[] parent;
     int size;
     
