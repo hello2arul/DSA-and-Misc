@@ -34,12 +34,12 @@ https://leetcode.ca/2016-11-23-359-Logger-Rate-Limiter/
  */
 public class LoggingRateLimiter {
     HashMap<String, Integer> messages = new HashMap<>();
-    
+
     public boolean shouldPrintMessage(int timestamp, String message) {
-        if (!messages.containsKey(message) || timestamp - messages.get(message) >=10) {
+        if (!messages.containsKey(message) || timestamp - messages.get(message) >= 10) {
             messages.put(message, timestamp);
             return true;
-        } 
+        }
         return false;
     }
 
