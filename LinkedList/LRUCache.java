@@ -15,33 +15,34 @@ import LinkedList.LRUCache.ListNode;
  */
 public class LRUCache {
     /*
-    private int capacity;
-    private LinkedHashMap<Integer, Integer> cache;
-    
-    public LRUCache(int capacity) {
-        this.capacity = capacity;
-        this.cache = new LinkedHashMap<>(capacity, 0.75f, true) {
-            @Override
-            protected boolean removeEldestEntry(Map.Entry e) {
-                return size() > capacity;
-            }
-        };
-    }
-    
-    public int get(int key) {
-        return cache.getOrDefault(key, -1);
-    }
-    
-    public void put(int key, int value) {
-        cache.put(key, value);
-    }
+     * private int capacity;
+     * private LinkedHashMap<Integer, Integer> cache;
+     * 
+     * public LRUCache(int capacity) {
+     * this.capacity = capacity;
+     * this.cache = new LinkedHashMap<>(capacity, 0.75f, true) {
+     * 
+     * @Override
+     * protected boolean removeEldestEntry(Map.Entry e) {
+     * return size() > capacity;
+     * }
+     * };
+     * }
+     * 
+     * public int get(int key) {
+     * return cache.getOrDefault(key, -1);
+     * }
+     * 
+     * public void put(int key, int value) {
+     * cache.put(key, value);
+     * }
      */
 
     class ListNode {
         int key;
         int val;
         ListNode next;
-        ListNode prev; 
+        ListNode prev;
 
         public ListNode(int key, int val) {
             this.val = val;
@@ -64,33 +65,33 @@ public class LRUCache {
         cache = new HashMap<>();
         this.capacity = capacity;
     }
-    
+
     public int get(int key) {
-        if(!cache.containsKey(key)) {
+        if (!cache.containsKey(key)) {
             return -1;
         }
         ListNode cur = cache.get(key);
         moveNodeToFront(cur);
         return cur.val;
     }
-    
+
     public void put(int key, int value) {
-        if(cache.containsKey(key)) {
+        if (cache.containsKey(key)) {
             cache.get(key).val = value;
             moveNodeToFront(cache.get(key));
         } else {
             ListNode cur = new ListNode(key, value);
             insertNodeAtFront(cur);
             cache.put(key, cur);
-            
-            if(cache.size() > capacity) {
+
+            if (cache.size() > capacity) {
                 removeNode(cache.remove(tail.key));
             }
         }
     }
 
     private void insertNodeAtFront(ListNode node) {
-        if(head == null) {
+        if (head == null) {
             head = tail = node;
         } else {
             head.prev = node;
@@ -101,9 +102,9 @@ public class LRUCache {
     }
 
     private void moveNodeToFront(ListNode node) {
-        if(node == head) {
+        if (node == head) {
             return;
-        } else if(node == tail) {
+        } else if (node == tail) {
             ListNode newTail = node.prev;
             newTail.next = null;
             tail = newTail;
@@ -115,14 +116,14 @@ public class LRUCache {
     }
 
     private void removeNode(ListNode node) {
-        if(node == head) {
+        if (node == head) {
             head = tail = null;
-        } else if(node == tail) {
+        } else if (node == tail) {
             node.prev.next = null;
             tail = node.prev;
             node.prev = null;
         } else {
-            // System.out.println(head + "" +  tail + node);
+            // System.out.println(head + "" + tail + node);
             node.prev.next = node.next;
             node.next.prev = node.prev;
             node.prev = node.next = null;

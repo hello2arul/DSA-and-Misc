@@ -4,18 +4,26 @@ import java.util.HashSet;
 import java.util.Set;
 
 /*
- * https://leetcode.com/problems/minimum-area-rectangle
- * You are given an array of points in the X-Y plane points where points[i] = [xi, yi].
+https://leetcode.com/problems/minimum-area-rectangle
+Google
 
-Return the minimum area of a rectangle formed from these points, with sides parallel to the X and Y axes. If there is not any such rectangle, return 0.
- */
+You are given an array of points in the X-Y plane points where points[i] = [xi, yi].
+
+Return the minimum area of a rectangle formed from these points, with sides parallel to the X and Y axes. 
+If there is not any such rectangle, return 0.
+
+Formation:
+
+A rectangle is defined by two diagonal points. For example, if we have two points (x1, y1) and (x2, y2), 
+they can form a rectangle if the other two points (x1, y2) and (x2, y1) also exist in the set of points.
+*/
 public class MinimumAreaRectangle {
-     public int minAreaRect(int[][] points) {
+    public int minAreaRect(int[][] points) {
         Set<String> pointSet = new HashSet<>();
 
         for (int[] point : points) {
             String key = point[0] + "," + point[1];
-            pointSet.add(key);            
+            pointSet.add(key);
         }
         int n = points.length;
         int minArea = Integer.MAX_VALUE;
